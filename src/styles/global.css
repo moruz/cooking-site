@@ -361,7 +361,7 @@ section + section, .main > * + * { margin-top: 2rem; }
 .recipe-card__art .photo { min-height: 100%; }
 .recipe-card__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 0.3rem; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--terracotta-dark); }
 .tag-onepot { color: #3d5e41; }
-.tag-onepot::before { content: '· '; }
+.tag-onepot::before { content: "·"; margin-right: 0.4rem; }
 .recipe-card:hover .photo { transform: scale(1.03); }
 .recipe-card .photo { transition: transform 0.4s ease; }
 
@@ -401,5 +401,27 @@ section + section, .main > * + * { margin-top: 2rem; }
   .mood { grid-template-columns: 1fr; padding: 0.9rem; }
   .mood__emoji { grid-row: auto; }
 }
-.hero__actions .btn { white-space: nowrap; }
 @media (min-width: 720px) { .hero { grid-template-columns: 1.3fr 1fr; } }
+
+/* ---------- Início para quem chega pela primeira vez ---------- */
+.btn { border-radius: 14px; font-weight: 800; letter-spacing: 0.005em; }
+.btn--primary { box-shadow: 0 2px 0 var(--terracotta-dark); }
+.btn--primary:hover { box-shadow: 0 2px 0 #8f3f20; }
+.btn--outline { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
+.btn--outline:hover { background: var(--ink); color: #fff; }
+.hero__actions .btn { white-space: nowrap; }
+.hero__badges { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin-top: 1.25rem; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
+.section-sub { margin: 0; }
+.how { display: grid; gap: 1rem; }
+.how li { display: flex; flex-direction: row; gap: 0.9rem; padding: 0; background: none; border: 0; box-shadow: none; align-items: flex-start; }
+.how__n { width: 40px; height: 40px; background: var(--terracotta); font-family: var(--font-display); font-size: 1.1rem; }
+.moodrow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+.moodrow__label { font-weight: 700; color: var(--ink-soft); font-size: 0.95rem; }
+.moodpill { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 44px; padding: 0 1rem; border-radius: 999px; background: var(--surface); border: 1.5px solid var(--line); text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+.moodpill:hover { border-color: var(--terracotta); color: var(--terracotta-dark); }
+.more { display: flex; justify-content: center; margin: 1.5rem 0 0; }
+.chip { border-radius: 12px; }
+@media (min-width: 720px) {
+  .how { grid-template-columns: repeat(3, 1fr); }
+  .hero__text { padding: 56px 40px; }
+}

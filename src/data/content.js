@@ -24,10 +24,14 @@ export const homeMoods = [
 ];
 
 export const steps3 = [
-  { n: '1', title: 'Escolha uma receita', text: 'Todas já são do tamanho certo para você.' },
-  { n: '2', title: 'Separe os ingredientes', text: 'Marque cada item no checklist.' },
-  { n: '3', title: 'Cozinhe um passo por vez', text: 'Com tela grande, timers e dicas do que observar.' },
+  { n: '1', title: 'Escolha um prato', text: 'Tudo já vem na medida de uma pessoa.' },
+  { n: '2', title: 'Separe os ingredientes', text: 'Marque cada item na lista.' },
+  { n: '3', title: 'Siga um passo por vez', text: 'Com timer e o que você deve ver em cada etapa.' },
 ];
+
+export const starterIds = ['omelete-caprichado', 'sanduiche-quente-queijo', 'macarrao-alho-e-oleo'];
+
+export const badges = ['🥄 1 porção', '⏱️ A maioria em até 30 min', '🌱 Sem precisar de experiência'];
 
 export const glossary = [
   { term: 'Refogar', text: 'Cozinhar rapidamente em um pouco de gordura (óleo, azeite ou manteiga), mexendo de vez em quando.' },
@@ -110,17 +114,3 @@ export const tipOfTheDay = [
   'Escolha uma música de que você goste. Cozinhar fica mais leve.',
   'Errar faz parte. Cada panela te ensina algo novo.',
 ];
-
-export const promises = [
-  { emoji: '🥄', title: 'Porção de uma pessoa', text: 'Medidas feitas para uma refeição, sem sobra demais.' },
-  { emoji: '⏱️', title: 'Comida de dia a dia', text: 'A maioria fica pronta em até 30 minutos.' },
-  { emoji: '🍲', title: 'Poucas panelas', text: 'Várias receitas usam só uma panela.' },
-  { emoji: '🌿', title: 'Ingredientes comuns', text: 'Tudo o que há no mercado do bairro.' },
-];
-
-export const about = {
-  eyebrow: 'A casa',
-  title: 'Uma mesa pequena, feita para você',
-  text: 'O PratoFacil nasceu de uma ideia simples: cozinhar para uma pessoa só merece receitas na medida, ingredientes de verdade e um prato bem apresentado. Aqui o cardápio muda de humor com a sua semana, do almoço rápido à sobremesa de caneca.',
-  points: ['Receitas autorais para 1 porção', 'Passo a passo com timers e sinais do que observar', 'Do café da manhã à bebida da noite'],
-};

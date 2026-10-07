@@ -1,12 +1,14 @@
 import { useMemo } from 'react';
 import RecipeCard from '../components/RecipeCard.jsx';
-import Photo from '../components/Photo.jsx';
 import Encouragement from '../components/Encouragement.jsx';
+import Photo from '../components/Photo.jsx';
 import { recipes, getRecipe } from '../data/recipes.js';
-import { homeMoods, steps3, tipOfTheDay, promises, about } from '../data/content.js';
+import { homeMoods, steps3, tipOfTheDay, starterIds, badges } from '../data/content.js';
 import { categories, photos } from '../data/images.js';
 import { useAppState } from '../hooks/useAppState.jsx';
 import { navigate } from '../hooks/useHashRoute.js';
+
+const SHOWCASE = ['risoto-cogumelo-uma-panela', 'salada-morna-grao-de-bico', 'estrogonofe-simples', 'mousse-chocolate-caneca', 'panqueca-banana-aveia', 'limonada-cremosa'];
 
 export default function Home() {
   const { progress, cookedCount } = useAppState();
@@ -14,6 +16,8 @@ export default function Home() {
   const resumeRecipe = resume && getRecipe(resume[0]);
   const totalCooked = Object.values(cookedCount).reduce((a, b) => a + b, 0);
   const tip = useMemo(() => tipOfTheDay[new Date().getDate() % tipOfTheDay.length], []);
+  const starters = starterIds.map(getRecipe).filter(Boolean);
+  const showcase = SHOWCASE.map(getRecipe).filter(Boolean);
 
   const surprise = () => {
     const pool = recipes.filter((r) => r.difficulty !== 'Um desafio leve');
@@ -24,31 +28,22 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero__text">
-          <p className="eyebrow">Cozinha caseira · porção para 1</p>
-          <h1>Um prato bonito, <em>feito para você.</em></h1>
+          <p className="eyebrow">Receitas para quem cozinha só</p>
+          <h1>Comida simples, feita <em>do seu jeito.</em></h1>
           <p className="hero__lead">
-            Receitas do dia a dia na medida de uma pessoa: almoço, jantar, sobremesa e bebida, com passo a passo calmo e sem pressa.
+            Escolha um prato, siga o passo a passo e pronto. Não precisa saber cozinhar.
           </p>
           <div className="hero__actions">
-            <a className="btn btn--primary btn--lg" href="#/receitas">Ver o cardápio</a>
-            <button type="button" className="btn btn--soft btn--lg" onClick={surprise}>🎲 Não sei o que cozinhar</button>
+            <a className="btn btn--primary btn--lg" href="#/receitas">Ver o que cozinhar</a>
+            <button type="button" className="btn btn--outline btn--lg" onClick={surprise}>Me surpreenda</button>
           </div>
-          {totalCooked > 0 && <p className="hero__stat">Você já cozinhou {totalCooked} {totalCooked === 1 ? 'vez' : 'vezes'} por aqui. Que orgulho! 🎉</p>}
+          <ul className="hero__badges">{badges.map((b) => <li key={b}>{b}</li>)}</ul>
+          {totalCooked > 0 && <p className="hero__stat">Você já cozinhou {totalCooked} {totalCooked === 1 ? 'vez' : 'vezes'} por aqui. Que orgulho!</p>}
         </div>
         <div className="hero__photo">
-          <Photo id={photos.hero} w={1200} alt="Prato bem apresentado em uma mesa de restaurante" fallback="🍽️" />
+          <Photo id={photos.hero} w={1200} alt="Prato bem apresentado" fallback="🍽️" />
         </div>
       </section>
-
-      <ul className="promises" aria-label="Nossos diferenciais">
-        {promises.map((p) => (
-          <li key={p.title}>
-            <span aria-hidden="true">{p.emoji}</span>
-            <strong>{p.title}</strong>
-            <small>{p.text}</small>
-          </li>
-        ))}
-      </ul>
 
       {resumeRecipe && (
         <a className="card resume" href={`#/cozinhar/${resumeRecipe.id}`}>
@@ -62,11 +57,32 @@ export default function Home() {
         </a>
       )}
 
-      <section aria-labelledby="refeicoes">
+      <section aria-labelledby="comece">
         <div className="section-head">
-          <h2 id="refeicoes">O que vai ser hoje?</h2>
-          <a href="#/receitas" className="link">Ver tudo</a>
+          <div>
+            <h2 id="comece">Primeira vez? Comece por aqui</h2>
+            <p className="muted section-sub">As três receitas mais fáceis, prontas em poucos minutos.</p>
+          </div>
         </div>
+        <div className="grid">
+          {starters.map((r) => <RecipeCard key={r.id} recipe={r} />)}
+        </div>
+      </section>
+
+      <section aria-labelledby="como">
+        <h2 id="como">Como funciona</h2>
+        <ol className="how">
+          {steps3.map((s) => (
+            <li key={s.n}>
+              <span className="how__n" aria-hidden="true">{s.n}</span>
+              <div><strong>{s.title}</strong><p className="muted">{s.text}</p></div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section aria-labelledby="refeicoes">
+        <h2 id="refeicoes">Escolha pela refeição</h2>
         <div className="cats">
           {categories.map((c) => (
             <a key={c.id} className="cat" href={`#/receitas?category=${encodeURIComponent(c.id)}`}>
@@ -75,16 +91,11 @@ export default function Home() {
             </a>
           ))}
         </div>
-      </section>
-
-      <section aria-labelledby="humor">
-        <h2 id="humor">Como você está hoje?</h2>
-        <div className="moods">
+        <div className="moodrow" role="group" aria-label="Ou escolha pelo seu momento">
+          <span className="moodrow__label">Ou pelo seu momento:</span>
           {homeMoods.map((m) => (
-            <a key={m.id} className="card mood" href={`#/receitas?${new URLSearchParams(m.filter).toString()}`}>
-              <span className="mood__emoji" aria-hidden="true">{m.emoji}</span>
-              <strong>{m.label}</strong>
-              <small>{m.hint}</small>
+            <a key={m.id} className="moodpill" href={`#/receitas?${new URLSearchParams(m.filter).toString()}`}>
+              <span aria-hidden="true">{m.emoji}</span> {m.label}
             </a>
           ))}
         </div>
@@ -92,39 +103,12 @@ export default function Home() {
 
       <section aria-labelledby="destaques">
         <div className="section-head">
-          <h2 id="destaques">Pratos da casa</h2>
-          <a href="#/receitas" className="link">Ver todas</a>
+          <h2 id="destaques">Mais pratos para experimentar</h2>
         </div>
         <div className="grid">
-          {recipes.filter((r) => ['risoto-cogumelo-uma-panela', 'salada-morna-grao-de-bico', 'estrogonofe-simples', 'mousse-chocolate-caneca', 'panqueca-banana-aveia', 'limonada-cremosa'].includes(r.id)).map((r) => <RecipeCard key={r.id} recipe={r} />)}
+          {showcase.map((r) => <RecipeCard key={r.id} recipe={r} />)}
         </div>
-      </section>
-
-      <section className="about" aria-labelledby="sobre">
-        <div className="about__gallery" aria-hidden="true">
-          <Photo id={photos.ambiente1} w={800} className="about__img about__img--a" />
-          <Photo id={photos.ambiente2} w={600} className="about__img about__img--b" />
-          <Photo id={photos.ambiente3} w={600} className="about__img about__img--c" />
-        </div>
-        <div className="about__text">
-          <p className="eyebrow">{about.eyebrow}</p>
-          <h2 id="sobre">{about.title}</h2>
-          <p className="muted">{about.text}</p>
-          <ul className="about__list">{about.points.map((p) => <li key={p}>{p}</li>)}</ul>
-          <a className="btn btn--primary" href="#/receitas">Explorar o cardápio</a>
-        </div>
-      </section>
-
-      <section aria-labelledby="como">
-        <h2 id="como">Como funciona</h2>
-        <ol className="how">
-          {steps3.map((s) => (
-            <li key={s.n} className="card">
-              <span className="how__n" aria-hidden="true">{s.n}</span>
-              <div><strong>{s.title}</strong><p className="muted">{s.text}</p></div>
-            </li>
-          ))}
-        </ol>
+        <p className="more"><a className="btn btn--outline" href="#/receitas">Ver todas as {recipes.length} receitas</a></p>
       </section>
 
       <Encouragement emoji="💛"><strong>Dica do dia:</strong> {tip}</Encouragement>

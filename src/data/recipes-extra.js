@@ -108,7 +108,7 @@ export const extraRecipes = [
   {
     id: 'salada-morna-grao-de-bico',
     title: 'Salada morna de grão-de-bico',
-    emoji: '🥗', tone: 'sage', photo: 'YbTg0Y1wB1M',
+    emoji: '🥗', tone: 'sage', photo: '-8xzDOlH_ec',
     category: 'Almoço', mainIngredient: 'Legumes',
     summary: 'Grão-de-bico dourado com tomate, folhas e limão. Fresca, saciante e pronta em 15 minutos.',
     prepMin: 8, cookMin: 7, difficulty: 'Muito fácil',
@@ -267,7 +267,7 @@ export const extraRecipes = [
   {
     id: 'mousse-chocolate-caneca',
     title: 'Mousse de chocolate de caneca',
-    emoji: '🍫', tone: 'terracotta', photo: 'XBPWay6Kqxc',
+    emoji: '🍫', tone: 'terracotta', photo: 'RQ4TXxFaaZc',
     category: 'Sobremesa', mainIngredient: 'Chocolate',
     summary: 'Uma porção de sobremesa cremosa, feita no micro-ondas e gelada na própria caneca.',
     prepMin: 8, cookMin: 2, difficulty: 'Fácil',
@@ -297,7 +297,7 @@ export const extraRecipes = [
   {
     id: 'banana-assada-canela',
     title: 'Banana assada com canela e mel',
-    emoji: '🍌', tone: 'butter', photo: null,
+    emoji: '🍌', tone: 'butter', photo: 'SvPP3ildT1M',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Banana quentinha e caramelizada, doce na medida certa e sem complicação.',
     prepMin: 3, cookMin: 15, difficulty: 'Muito fácil',
@@ -357,7 +357,7 @@ export const extraRecipes = [
   {
     id: 'cha-gelado-laranja',
     title: 'Chá gelado de laranja e hortelã',
-    emoji: '🍊', tone: 'sage', photo: 'dXRRaiF_b_U',
+    emoji: '🍊', tone: 'sage', photo: 'xLuyR-XUuPA',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Chá perfumado com rodelas de laranja e hortelã. Pronto para o dia seguinte também.',
     prepMin: 5, cookMin: 5, difficulty: 'Muito fácil',
