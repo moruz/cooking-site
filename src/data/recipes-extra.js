@@ -6,7 +6,7 @@ export const extraRecipes = [
   {
     id: 'risoto-cogumelo-uma-panela',
     title: 'Risoto cremoso de cogumelos',
-    emoji: '🍄', tone: 'sage', photo: '1476124369491-e7addf5db371',
+    emoji: '🍄', tone: 'sage', photo: 'qIPRTMulc-g',
     category: 'Jantar', onePot: true, mainIngredient: 'Arroz',
     summary: 'Arroz cremoso e perfumado, feito inteiro em uma panela só, sem fila de louça.',
     prepMin: 8, cookMin: 25, difficulty: 'Fácil',
@@ -39,7 +39,7 @@ export const extraRecipes = [
   {
     id: 'arroz-frango-ervilha',
     title: 'Arroz de panela única com frango',
-    emoji: '🍗', tone: 'butter', photo: '1604908176997-125f25cc6f3d',
+    emoji: '🍗', tone: 'butter', photo: 'T_nI-UhMm5g',
     category: 'Almoço', onePot: true, mainIngredient: 'Frango',
     summary: 'Frango, arroz e ervilha cozinhando juntos. Um almoço completo e uma panela para lavar.',
     prepMin: 10, cookMin: 30, difficulty: 'Fácil',
@@ -75,7 +75,7 @@ export const extraRecipes = [
   {
     id: 'sopa-abobora-gengibre',
     title: 'Sopa cremosa de abóbora',
-    emoji: '🎃', tone: 'terracotta', photo: '1547592180-85f173990554',
+    emoji: '🎃', tone: 'terracotta', photo: 'cToNEm70cvE',
     category: 'Jantar', onePot: true, mainIngredient: 'Legumes',
     summary: 'Uma sopa sedosa e dourada, com um toque de gengibre, para noites mais frescas.',
     prepMin: 10, cookMin: 25, difficulty: 'Muito fácil',
@@ -108,7 +108,7 @@ export const extraRecipes = [
   {
     id: 'salada-morna-grao-de-bico',
     title: 'Salada morna de grão-de-bico',
-    emoji: '🥗', tone: 'sage', photo: '1512621776951-a57141f2eefd',
+    emoji: '🥗', tone: 'sage', photo: 'YbTg0Y1wB1M',
     category: 'Almoço', mainIngredient: 'Legumes',
     summary: 'Grão-de-bico dourado com tomate, folhas e limão. Fresca, saciante e pronta em 15 minutos.',
     prepMin: 8, cookMin: 7, difficulty: 'Muito fácil',
@@ -141,7 +141,7 @@ export const extraRecipes = [
   {
     id: 'tapioca-queijo-tomate',
     title: 'Tapioca de queijo e tomate',
-    emoji: '🫓', tone: 'butter', photo: '1525351484163-7529414344d8',
+    emoji: '🫓', tone: 'butter', photo: null,
     category: 'Café e lanche', mainIngredient: 'Queijo',
     summary: 'Massa de tapioca crocante por fora e recheio quente de queijo, pronta em 5 minutos.',
     prepMin: 2, cookMin: 5, difficulty: 'Muito fácil',
@@ -172,7 +172,7 @@ export const extraRecipes = [
   {
     id: 'panqueca-banana-aveia',
     title: 'Panqueca de banana e aveia',
-    emoji: '🥞', tone: 'butter', photo: '1567620905732-2d1ec7ab7445',
+    emoji: '🥞', tone: 'butter', photo: '7hlOjB5VVb0',
     category: 'Café e lanche', mainIngredient: 'Ovo',
     summary: 'Três panquequinhas fofas, adoçadas só pela banana. Ótimas no café da manhã.',
     prepMin: 5, cookMin: 8, difficulty: 'Fácil',
@@ -204,7 +204,7 @@ export const extraRecipes = [
   {
     id: 'macarrao-tomate-cereja',
     title: 'Macarrão de panela única com tomate-cereja',
-    emoji: '🍝', tone: 'terracotta', photo: '1473093295043-cdd812d0e601',
+    emoji: '🍝', tone: 'terracotta', photo: 'tEVisOXz26Y',
     category: 'Jantar', onePot: true, mainIngredient: 'Macarrão',
     summary: 'A massa cozinha direto no molho. Sai cremoso, com menos louça e muito sabor.',
     prepMin: 5, cookMin: 15, difficulty: 'Fácil',
@@ -237,7 +237,7 @@ export const extraRecipes = [
   {
     id: 'sanduiche-quente-queijo',
     title: 'Sanduíche quente de queijo e tomate',
-    emoji: '🥪', tone: 'butter', photo: '1528735602780-2552fd46c7af',
+    emoji: '🥪', tone: 'butter', photo: '3AoHmfsKPa8',
     category: 'Jantar', mainIngredient: 'Queijo',
     summary: 'Pão crocante, queijo derretido e tomate. Solução rápida para o fim do dia.',
     prepMin: 3, cookMin: 6, difficulty: 'Muito fácil',
@@ -267,7 +267,7 @@ export const extraRecipes = [
   {
     id: 'mousse-chocolate-caneca',
     title: 'Mousse de chocolate de caneca',
-    emoji: '🍫', tone: 'terracotta', photo: '1563729784474-d77dbb933a9e',
+    emoji: '🍫', tone: 'terracotta', photo: 'XBPWay6Kqxc',
     category: 'Sobremesa', mainIngredient: 'Chocolate',
     summary: 'Uma porção de sobremesa cremosa, feita no micro-ondas e gelada na própria caneca.',
     prepMin: 8, cookMin: 2, difficulty: 'Fácil',
@@ -297,7 +297,7 @@ export const extraRecipes = [
   {
     id: 'banana-assada-canela',
     title: 'Banana assada com canela e mel',
-    emoji: '🍌', tone: 'butter', photo: '1571771894821-ce9b6c11b08e',
+    emoji: '🍌', tone: 'butter', photo: null,
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Banana quentinha e caramelizada, doce na medida certa e sem complicação.',
     prepMin: 3, cookMin: 15, difficulty: 'Muito fácil',
@@ -327,7 +327,7 @@ export const extraRecipes = [
   {
     id: 'limonada-cremosa',
     title: 'Limonada cremosa',
-    emoji: '🍋', tone: 'butter', photo: '1556679343-c7306c1976bc',
+    emoji: '🍋', tone: 'butter', photo: 'Z3z1O7hqyC4',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Refrescante, levemente doce e com um toque de leite condensado para suavizar.',
     prepMin: 5, cookMin: 0, difficulty: 'Muito fácil',
@@ -357,7 +357,7 @@ export const extraRecipes = [
   {
     id: 'cha-gelado-laranja',
     title: 'Chá gelado de laranja e hortelã',
-    emoji: '🍊', tone: 'sage', photo: '1544145945-f90425340c7e',
+    emoji: '🍊', tone: 'sage', photo: 'dXRRaiF_b_U',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Chá perfumado com rodelas de laranja e hortelã. Pronto para o dia seguinte também.',
     prepMin: 5, cookMin: 5, difficulty: 'Muito fácil',
@@ -387,7 +387,7 @@ export const extraRecipes = [
   {
     id: 'vitamina-manga-gengibre',
     title: 'Vitamina de manga e gengibre',
-    emoji: '🥭', tone: 'butter', photo: '1623065422902-30a2d299bbe4',
+    emoji: '🥭', tone: 'butter', photo: 'KlVIYmGVRQ8',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Cremosa, tropical e com um toque picante de gengibre. Dá para fazer no liquidificador em 3 minutos.',
     prepMin: 3, cookMin: 0, difficulty: 'Muito fácil',
