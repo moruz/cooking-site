@@ -5,11 +5,16 @@
 // step.look    -> "Como deve ficar" (o que a pessoa deve ver/ouvir/sentir)
 // step.careful -> aviso curto de erro comum naquele passo (opcional)
 
+import { extraRecipes } from './recipes-extra.js';
+
 export const DIFFICULTIES = ['Muito fácil', 'Fácil', 'Um desafio leve'];
 
 export const recipes = [
   {
     id: 'arroz-soltinho',
+    photo: '1603133872878-684f208fb84b',
+    category: 'Almoço',
+    onePot: false,
     title: 'Arroz soltinho para 1',
     emoji: '🍚',
     tone: 'butter',
@@ -79,6 +84,9 @@ export const recipes = [
 
   {
     id: 'macarrao-alho-e-oleo',
+    photo: '1621996346565-e3dbc646d9a9',
+    category: 'Jantar',
+    onePot: true,
     title: 'Macarrão alho e óleo para 1',
     emoji: '🍝',
     tone: 'terracotta',
@@ -150,6 +158,9 @@ export const recipes = [
 
   {
     id: 'frango-grelhado-simples',
+    photo: '1604908176997-125f25cc6f3d',
+    category: 'Almoço',
+    onePot: false,
     title: 'Frango grelhado simples',
     emoji: '🍗',
     tone: 'sage',
@@ -222,6 +233,9 @@ export const recipes = [
 
   {
     id: 'omelete-caprichado',
+    photo: '1482049016688-2d3e1b311543',
+    category: 'Jantar',
+    onePot: false,
     title: 'Omelete caprichado',
     emoji: '🍳',
     tone: 'butter',
@@ -285,6 +299,9 @@ export const recipes = [
 
   {
     id: 'legumes-assados',
+    photo: '1498837167922-ddd27525d352',
+    category: 'Almoço',
+    onePot: false,
     title: 'Legumes assados no forno',
     emoji: '🥕',
     tone: 'sage',
@@ -356,6 +373,9 @@ export const recipes = [
 
   {
     id: 'estrogonofe-simples',
+    photo: '1504674900247-0877df9cc836',
+    category: 'Almoço',
+    onePot: true,
     title: 'Estrogonofe simples para 1',
     emoji: '🥘',
     tone: 'terracotta',
@@ -427,6 +447,8 @@ export const recipes = [
     ],
   },
 ];
+
+recipes.push(...extraRecipes);
 
 export const mainIngredients = [...new Set(recipes.map((r) => r.mainIngredient))];
 

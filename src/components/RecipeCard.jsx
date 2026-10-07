@@ -1,5 +1,6 @@
 import { totalTime } from '../data/recipes.js';
 import { useAppState } from '../hooks/useAppState.jsx';
+import Photo from './Photo.jsx';
 import FavoriteButton from './FavoriteButton.jsx';
 
 export default function RecipeCard({ recipe }) {
@@ -9,10 +10,13 @@ export default function RecipeCard({ recipe }) {
   return (
     <article className="card recipe-card">
       <a className="recipe-card__link" href={`#/receita/${recipe.id}`} aria-label={`Abrir receita: ${recipe.title}`}>
-        <div className={`recipe-card__art tone-${recipe.tone}`} aria-hidden="true">
-          <span>{recipe.emoji}</span>
+        <div className={`recipe-card__art tone-${recipe.tone}`}>
+          <Photo id={recipe.photo} w={600} alt={recipe.title} fallback={recipe.emoji} />
         </div>
         <div className="recipe-card__body">
+          <p className="recipe-card__tags">
+            <span>{recipe.category}</span>{recipe.onePot && <span className="tag-onepot">Uma panela só</span>}
+          </p>
           <h3>{recipe.title}</h3>
           <p className="muted">{recipe.summary}</p>
           <ul className="meta">

@@ -2,7 +2,7 @@ import { BRAND } from '../data/content.js';
 
 const links = [
   { to: 'inicio', label: 'Início', icon: '🏠' },
-  { to: 'receitas', label: 'Receitas', icon: '🍽️' },
+  { to: 'receitas', label: 'Cardápio', icon: '🍽️' },
   { to: 'dicas', label: 'Dicas', icon: '💡' },
   { to: 'favoritas', label: 'Favoritas', icon: '♥' },
 ];
@@ -31,10 +31,9 @@ export default function Layout({ route, children }) {
       <main id="conteudo" className="container main">{children}</main>
 
       <footer className="footer container">
-        <p>
-          <strong>{BRAND}</strong> — receitas originais para uma pessoa só.
-        </p>
-        <p>Feito para quem está começando. Errar faz parte, e você está indo bem.</p>
+        <p><strong>{BRAND}</strong> — a cozinha de uma pessoa só.</p>
+        <p>Receitas originais, feitas para quem cozinha para si. Errar faz parte, e você está indo bem.</p>
+        <p className="footer__credit">Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
       </footer>
 
       <nav className="bottomnav" aria-label="Navegação principal">

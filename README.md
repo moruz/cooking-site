@@ -4,7 +4,7 @@ Receitas para uma pessoa só, com passo a passo calmo para quem está começando
 
 ## O que tem
 
-- **6 receitas originais** para 1 porção, com ingredientes, utensílios, trocas fáceis e erros comuns.
+- **18 receitas originais** (almoço, jantar, café e lanche, sobremesa, bebida e opções de uma panela só) para 1 porção, com ingredientes, utensílios, trocas fáceis e erros comuns.
 - **Modo cozinhar:** tela cheia, um passo por vez, timers e a seção "Como deve ficar".
 - **Descoberta:** filtros por tempo, dificuldade e ingrediente principal, favoritas e o botão "Não sei o que cozinhar".
 - **Dicas para iniciantes** e dicionário rápido.
@@ -42,5 +42,6 @@ Inclua um objeto novo no array de `src/data/recipes.js`, seguindo o formato das 
 - Favoritas, checklist e progresso ficam no `localStorage` do navegador, sem conta.
 - O roteamento é por hash (`#/receitas`), então funciona em qualquer hospedagem estática.
 - Todo o conteúdo das receitas é original.
+- As fotos são externas (Unsplash) e centralizadas em `src/data/images.js` e no campo `photo` de cada receita; se uma foto falhar, o card mostra o emoji da receita.
 
 Mais detalhes em [docs/PRODUTO.md](docs/PRODUTO.md).

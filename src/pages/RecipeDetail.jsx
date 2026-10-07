@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Encouragement from '../components/Encouragement.jsx';
 import FavoriteButton from '../components/FavoriteButton.jsx';
 import IngredientChecklist from '../components/IngredientChecklist.jsx';
+import Photo from '../components/Photo.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import { getRecipe } from '../data/recipes.js';
 import { useAppState } from '../hooks/useAppState.jsx';
@@ -21,8 +22,9 @@ export default function RecipeDetail({ id }) {
       <a className="back" href="#/receitas">← Todas as receitas</a>
 
       <header className={`detail__head tone-${recipe.tone}`}>
-        <span className="detail__emoji" aria-hidden="true">{recipe.emoji}</span>
-        <div>
+        <div className="detail__photo"><Photo id={recipe.photo} w={1200} alt={recipe.title} fallback={recipe.emoji} /></div>
+        <div className="detail__intro">
+          <p className="eyebrow">{recipe.category}{recipe.onePot ? ' · uma panela só' : ''}</p>
           <h1>{recipe.title}</h1>
           <p>{recipe.summary}</p>
         </div>

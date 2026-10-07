@@ -18,8 +18,9 @@ export const finishMessages = [
 
 export const homeMoods = [
   { id: 'rapido', emoji: '⏱️', label: 'Tenho pouco tempo', hint: 'Até 20 minutos', filter: { time: 20 } },
+  { id: 'panela', emoji: '🍲', label: 'Pouca louça', hint: 'Uma panela só', filter: { onePot: 1 } },
   { id: 'facil', emoji: '🌱', label: 'Quero algo bem fácil', hint: 'Para começar sem susto', filter: { difficulty: 'Muito fácil' } },
-  { id: 'reconforto', emoji: '🫶', label: 'Preciso de um conforto', hint: 'Pratos que abraçam', filter: { ingredient: 'Frango' } },
+  { id: 'reconforto', emoji: '🫶', label: 'Quero conforto', hint: 'Jantares que abraçam', filter: { category: 'Jantar' } },
 ];
 
 export const steps3 = [
@@ -109,3 +110,17 @@ export const tipOfTheDay = [
   'Escolha uma música de que você goste. Cozinhar fica mais leve.',
   'Errar faz parte. Cada panela te ensina algo novo.',
 ];
+
+export const promises = [
+  { emoji: '🥄', title: 'Porção de uma pessoa', text: 'Medidas feitas para uma refeição, sem sobra demais.' },
+  { emoji: '⏱️', title: 'Comida de dia a dia', text: 'A maioria fica pronta em até 30 minutos.' },
+  { emoji: '🍲', title: 'Poucas panelas', text: 'Várias receitas usam só uma panela.' },
+  { emoji: '🌿', title: 'Ingredientes comuns', text: 'Tudo o que há no mercado do bairro.' },
+];
+
+export const about = {
+  eyebrow: 'A casa',
+  title: 'Uma mesa pequena, feita para você',
+  text: 'O Prato Um nasceu de uma ideia simples: cozinhar para uma pessoa só merece receitas na medida, ingredientes de verdade e um prato bem apresentado. Aqui o cardápio muda de humor com a sua semana, do almoço rápido à sobremesa de caneca.',
+  points: ['Receitas autorais para 1 porção', 'Passo a passo com timers e sinais do que observar', 'Do café da manhã à bebida da noite'],
+};
