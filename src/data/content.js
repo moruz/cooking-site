@@ -1,6 +1,6 @@
 // Textos do produto em português (microcopy centralizado para facilitar ajustes).
 
-export const BRAND = 'Prato Um';
+export const BRAND = 'PratoFacil';
 
 export const cheers = [
   'Muito bem! Um passo a menos.',
@@ -121,6 +121,6 @@ export const promises = [
 export const about = {
   eyebrow: 'A casa',
   title: 'Uma mesa pequena, feita para você',
-  text: 'O Prato Um nasceu de uma ideia simples: cozinhar para uma pessoa só merece receitas na medida, ingredientes de verdade e um prato bem apresentado. Aqui o cardápio muda de humor com a sua semana, do almoço rápido à sobremesa de caneca.',
+  text: 'O PratoFacil nasceu de uma ideia simples: cozinhar para uma pessoa só merece receitas na medida, ingredientes de verdade e um prato bem apresentado. Aqui o cardápio muda de humor com a sua semana, do almoço rápido à sobremesa de caneca.',
   points: ['Receitas autorais para 1 porção', 'Passo a passo com timers e sinais do que observar', 'Do café da manhã à bebida da noite'],
 };

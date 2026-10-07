@@ -1,7 +1,7 @@
-# Prato Um — documento de produto
+# PratoFacil — documento de produto
 
 ## Resumo do produto
-**Prato Um** é um app web responsivo (mobile-first) de receitas para uma pessoa só, com foco em iniciantes. Seu diferencial é o **modo cozinhar**: tela cheia, uma etapa por vez, timers e a seção "Como deve ficar" que mostra o que a pessoa deve ver, ouvir e sentir. Todo o conteúdo (receitas, dicas, microcopy) é original e em português do Brasil.
+**PratoFacil** é um app web responsivo (mobile-first) de receitas para uma pessoa só, com foco em iniciantes. Seu diferencial é o **modo cozinhar**: tela cheia, uma etapa por vez, timers e a seção "Como deve ficar" que mostra o que a pessoa deve ver, ouvir e sentir. Todo o conteúdo (receitas, dicas, microcopy) é original e em português do Brasil.
 
 ## Público e dores
 | Perfil | Dor | Resposta do produto |

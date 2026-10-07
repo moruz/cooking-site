@@ -1,4 +1,4 @@
-# Prato Um
+# PratoFacil
 
 Receitas para uma pessoa só, com passo a passo calmo para quem está começando a cozinhar.
 
