@@ -58,7 +58,7 @@ export default function Recipes({ onlyFavorites = false, favorites = [] }) {
       </p>
 
       {list.length > 0 ? (
-        <div className="grid">{list.map((r) => <RecipeCard key={r.id} recipe={r} />)}</div>
+        <div className="grid grid--dense">{list.map((r) => <RecipeCard key={r.id} recipe={r} dense />)}</div>
       ) : (
         <div className="empty card">
           <span aria-hidden="true">{onlyFavorites && !active ? '♡' : '🥄'}</span>
