@@ -461,7 +461,7 @@ export const lote3 = [
   },
   {
     id: 'rabanada-frigideira',
-    title: 'Rabanada de frigideira', emoji: '🍞', tone: 'butter', photo: null,
+    title: 'Rabanada de frigideira', emoji: '🍞', tone: 'butter', photo: 'PCHYt67P6eA',
     category: 'Sobremesa', mainIngredient: 'Ovo',
     summary: 'Pão amanhecido molhado em leite e ovo, dourado na manteiga e passado em açúcar e canela.',
     prepMin: 5, cookMin: 8, difficulty: 'Fácil',

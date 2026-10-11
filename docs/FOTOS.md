@@ -11,7 +11,6 @@ Ou me mande os links que eu coloco.
 | Receita | Buscar no Unsplash |
 |---|---|
 | Tapioca de queijo e tomate (`tapioca-queijo-tomate`) | https://unsplash.com/s/photos/tapioca |
-| Feijão temperado de panela (`feijao-carioca-simples`) | https://unsplash.com/s/photos/beans |
 | Farofa de ovo na manteiga (`farofa-de-ovo`) | https://unsplash.com/s/photos/farofa |
 | Pão de queijo de liquidificador (`pao-de-queijo-liquidificador`) | https://unsplash.com/s/photos/pao-de-queijo |
 | Brigadeiro de colher para 1 (`brigadeiro-de-colher`) | https://unsplash.com/s/photos/brigadeiro |
@@ -34,7 +33,6 @@ Ou me mande os links que eu coloco.
 | Bolo de cenoura de caneca (`bolo-cenoura-caneca`) | https://unsplash.com/s/photos/carrot-cake |
 | Banana caramelizada na frigideira (`banana-caramelizada`) | https://unsplash.com/s/photos/fried-banana |
 | Sorvete de banana (`sorvete-de-banana`) | https://unsplash.com/s/photos/banana-ice-cream |
-| Rabanada de frigideira (`rabanada-frigideira`) | https://unsplash.com/s/photos/food |
 | Frango ao molho de mostarda (`frango-molho-mostarda`) | https://unsplash.com/s/photos/chicken-mustard-sauce |
 | Frango à parmegiana de forno (`frango-parmegiana-forno`) | https://unsplash.com/s/photos/chicken-parmesan |
 | Salada de macarrão (`salada-de-macarrao`) | https://unsplash.com/s/photos/pasta-salad |

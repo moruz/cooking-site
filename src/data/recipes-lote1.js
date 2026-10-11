@@ -4,7 +4,7 @@
 export const lote1 = [
   {
     id: 'feijao-carioca-simples',
-    title: 'Feijão temperado de panela', emoji: '🫘', tone: 'terracotta', photo: null,
+    title: 'Feijão temperado de panela', emoji: '🫘', tone: 'terracotta', photo: '4-lD-BSL99I',
     category: 'Almoço', onePot: true, mainIngredient: 'Feijão',
     summary: 'Feijão caseiro com alho e cebola, feito com feijão já cozido para ficar pronto em 15 minutos.',
     prepMin: 5, cookMin: 15, difficulty: 'Muito fácil',
