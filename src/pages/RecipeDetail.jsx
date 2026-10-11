@@ -34,7 +34,7 @@ export default function RecipeDetail({ id }) {
         <div><dt>Preparo</dt><dd>{recipe.prepMin} min</dd></div>
         <div><dt>Cozimento</dt><dd>{recipe.cookMin} min</dd></div>
         <div><dt>Dificuldade</dt><dd>{recipe.difficulty}</dd></div>
-        <div><dt>Porções</dt><dd>{recipe.servings === 2 ? '2 pessoas' : '1 pessoa'}</dd></div>
+        <div><dt>Porções</dt><dd>{recipe.servings === 2 ? '2' : '1'}</dd></div>
       </dl>
 
       <div className="detail__actions">

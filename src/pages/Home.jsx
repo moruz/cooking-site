@@ -97,7 +97,7 @@ export default function Home() {
         <p className="more"><a className="btn btn--outline" href="#/receitas">Ver todas as {recipes.length} receitas</a></p>
       </section>
 
-      <section aria-labelledby="date">
+      <section aria-labelledby="date" className="section--date">
         <div className="section-head">
           <div>
             <h2 id="date">Jantar a dois</h2>

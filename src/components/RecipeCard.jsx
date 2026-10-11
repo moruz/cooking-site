@@ -12,15 +12,15 @@ export default function RecipeCard({ recipe, dense = false }) {
       <a className="recipe-card__link" href={`#/receita/${recipe.id}`} aria-label={`Abrir receita: ${recipe.title}`}>
         <div className={`recipe-card__art tone-${recipe.tone}`}>
           <Photo id={recipe.photo} w={600} alt={recipe.title} />
+          <span className="recipe-card__time" aria-hidden="true">{totalTime(recipe)} min</span>
         </div>
         <div className="recipe-card__body">
           <p className="recipe-card__tags">
-            <span>{recipe.category}</span>{recipe.onePot && <span className="tag-onepot">Uma panela só</span>}
+            <span className={recipe.category === 'Date a dois' ? 'tag-date' : undefined}>{recipe.category}</span>{recipe.onePot && <span className="tag-onepot">Uma panela só</span>}
           </p>
           <h3>{recipe.title}</h3>
           <p className="muted">{recipe.summary}</p>
           <ul className="meta">
-            <li>⏱ {totalTime(recipe)} min</li>
             <li>{recipe.difficulty}</li>
             <li>{recipe.servings === 2 ? '2 porções' : '1 porção'}</li>
           </ul>
