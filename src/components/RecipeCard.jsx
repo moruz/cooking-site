@@ -3,12 +3,12 @@ import { useAppState } from '../hooks/useAppState.jsx';
 import Photo from './Photo.jsx';
 import FavoriteButton from './FavoriteButton.jsx';
 
-export default function RecipeCard({ recipe }) {
+export default function RecipeCard({ recipe, dense = false }) {
   const { progress } = useAppState();
   const p = progress[recipe.id];
   const inProgress = p && !p.done && p.step > 0;
   return (
-    <article className="card recipe-card">
+    <article className={`card recipe-card${dense ? ' recipe-card--dense' : ''}`}>
       <a className="recipe-card__link" href={`#/receita/${recipe.id}`} aria-label={`Abrir receita: ${recipe.title}`}>
         <div className={`recipe-card__art tone-${recipe.tone}`}>
           <Photo id={recipe.photo} w={600} alt={recipe.title} fallback={recipe.emoji} />

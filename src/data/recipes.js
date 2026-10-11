@@ -238,7 +238,7 @@ export const recipes = [
 
   {
     id: 'omelete-caprichado',
-    photo: 'eWZJlxEIRN8',
+    photo: 'vq8iQKYfggs',
     category: 'Jantar',
     onePot: false,
     title: 'Omelete caprichado',

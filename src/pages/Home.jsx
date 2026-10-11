@@ -3,12 +3,17 @@ import RecipeCard from '../components/RecipeCard.jsx';
 import Encouragement from '../components/Encouragement.jsx';
 import Photo from '../components/Photo.jsx';
 import { recipes, getRecipe } from '../data/recipes.js';
-import { homeMoods, steps3, tipOfTheDay, starterIds, badges } from '../data/content.js';
-import { categories, photos } from '../data/images.js';
+import { homeMoods, steps3, tipOfTheDay, starterIds } from '../data/content.js';
+import { categories } from '../data/images.js';
 import { useAppState } from '../hooks/useAppState.jsx';
 import { navigate } from '../hooks/useHashRoute.js';
 
-const SHOWCASE = ['risoto-cogumelo-uma-panela', 'salada-morna-grao-de-bico', 'estrogonofe-simples', 'mousse-chocolate-caneca', 'panqueca-banana-aveia', 'limonada-cremosa'];
+// Sorteio que muda a cada dia, para a vitrine da página inicial não ficar sempre igual.
+const dailyPick = (list, n) => {
+  let seed = Math.floor(Date.now() / 86400000);
+  const rand = () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296);
+  return [...list].sort(() => rand() - 0.5).slice(0, n);
+};
 
 export default function Home() {
   const { progress, cookedCount } = useAppState();
@@ -17,7 +22,7 @@ export default function Home() {
   const totalCooked = Object.values(cookedCount).reduce((a, b) => a + b, 0);
   const tip = useMemo(() => tipOfTheDay[new Date().getDate() % tipOfTheDay.length], []);
   const starters = starterIds.map(getRecipe).filter(Boolean);
-  const showcase = SHOWCASE.map(getRecipe).filter(Boolean);
+  const showcase = useMemo(() => dailyPick(recipes.filter((r) => r.photo && !starterIds.includes(r.id)), 16), []);
 
   const surprise = () => {
     const pool = recipes.filter((r) => r.difficulty !== 'Um desafio leve');
@@ -26,24 +31,34 @@ export default function Home() {
 
   return (
     <>
-      <section className="hero">
-        <div className="hero__text">
-          <p className="eyebrow">Receitas para quem cozinha só</p>
+      <section className="banner">
+        <div className="banner__text">
           <h1>Comida simples, feita <em>do seu jeito.</em></h1>
-          <p className="hero__lead">
-            Escolha um prato, siga o passo a passo e pronto. Não precisa saber cozinhar.
-          </p>
-          <div className="hero__actions">
-            <a className="btn btn--primary btn--lg" href="#/receitas">Ver o que cozinhar</a>
-            <button type="button" className="btn btn--outline btn--lg" onClick={surprise}>Me surpreenda</button>
-          </div>
-          <ul className="hero__badges">{badges.map((b) => <li key={b}>{b}</li>)}</ul>
-          {totalCooked > 0 && <p className="hero__stat">Você já cozinhou {totalCooked} {totalCooked === 1 ? 'vez' : 'vezes'} por aqui. Que orgulho!</p>}
+          <p>Escolha um prato, siga o passo a passo e pronto.{totalCooked > 0 && ` Você já cozinhou ${totalCooked} ${totalCooked === 1 ? 'vez' : 'vezes'}. Que orgulho!`}</p>
         </div>
-        <div className="hero__photo">
-          <Photo id={photos.hero} w={1200} alt="Prato bem apresentado" fallback="🍽️" />
+        <div className="banner__actions">
+          <a className="btn btn--primary" href="#/receitas">Ver todas as receitas</a>
+          <button type="button" className="btn btn--outline" onClick={surprise}>Me surpreenda</button>
         </div>
       </section>
+
+      <div className="quick">
+        <div className="cats cats--compact" role="group" aria-label="Escolha pela refeição">
+          {categories.map((c) => (
+            <a key={c.id} className="cat" href={`#/receitas?category=${encodeURIComponent(c.id)}`}>
+              <Photo id={c.photo} w={400} alt="" fallback={c.emoji} />
+              <span className="cat__label"><strong>{c.id}</strong></span>
+            </a>
+          ))}
+        </div>
+        <div className="moodrow" role="group" aria-label="Ou escolha pelo seu momento">
+          {homeMoods.map((m) => (
+            <a key={m.id} className="moodpill" href={`#/receitas?${new URLSearchParams(m.filter).toString()}`}>
+              <span aria-hidden="true">{m.emoji}</span> {m.label}
+            </a>
+          ))}
+        </div>
+      </div>
 
       {resumeRecipe && (
         <a className="card resume" href={`#/cozinhar/${resumeRecipe.id}`}>
@@ -61,12 +76,23 @@ export default function Home() {
         <div className="section-head">
           <div>
             <h2 id="comece">Primeira vez? Comece por aqui</h2>
-            <p className="muted section-sub">As três receitas mais fáceis, prontas em poucos minutos.</p>
+            <p className="muted section-sub">As receitas mais fáceis, prontas em poucos minutos.</p>
           </div>
         </div>
-        <div className="grid">
-          {starters.map((r) => <RecipeCard key={r.id} recipe={r} />)}
+        <div className="grid grid--dense">
+          {starters.map((r) => <RecipeCard key={r.id} recipe={r} dense />)}
         </div>
+      </section>
+
+      <section aria-labelledby="destaques">
+        <div className="section-head">
+          <h2 id="destaques">Para cozinhar hoje</h2>
+          <a className="section-link" href="#/receitas">Ver todas as {recipes.length} →</a>
+        </div>
+        <div className="grid grid--dense">
+          {showcase.map((r) => <RecipeCard key={r.id} recipe={r} dense />)}
+        </div>
+        <p className="more"><a className="btn btn--outline" href="#/receitas">Ver todas as {recipes.length} receitas</a></p>
       </section>
 
       <section aria-labelledby="como">
@@ -79,36 +105,6 @@ export default function Home() {
             </li>
           ))}
         </ol>
-      </section>
-
-      <section aria-labelledby="refeicoes">
-        <h2 id="refeicoes">Escolha pela refeição</h2>
-        <div className="cats">
-          {categories.map((c) => (
-            <a key={c.id} className="cat" href={`#/receitas?category=${encodeURIComponent(c.id)}`}>
-              <Photo id={c.photo} w={500} alt="" fallback={c.emoji} />
-              <span className="cat__label"><strong>{c.id}</strong><small>{c.hint}</small></span>
-            </a>
-          ))}
-        </div>
-        <div className="moodrow" role="group" aria-label="Ou escolha pelo seu momento">
-          <span className="moodrow__label">Ou pelo seu momento:</span>
-          {homeMoods.map((m) => (
-            <a key={m.id} className="moodpill" href={`#/receitas?${new URLSearchParams(m.filter).toString()}`}>
-              <span aria-hidden="true">{m.emoji}</span> {m.label}
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section aria-labelledby="destaques">
-        <div className="section-head">
-          <h2 id="destaques">Mais pratos para experimentar</h2>
-        </div>
-        <div className="grid">
-          {showcase.map((r) => <RecipeCard key={r.id} recipe={r} />)}
-        </div>
-        <p className="more"><a className="btn btn--outline" href="#/receitas">Ver todas as {recipes.length} receitas</a></p>
       </section>
 
       <Encouragement emoji="💛"><strong>Dica do dia:</strong> {tip}</Encouragement>

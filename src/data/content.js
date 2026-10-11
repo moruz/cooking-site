@@ -29,7 +29,7 @@ export const steps3 = [
   { n: '3', title: 'Siga um passo por vez', text: 'Com timer e o que você deve ver em cada etapa.' },
 ];
 
-export const starterIds = ['omelete-caprichado', 'sanduiche-quente-queijo', 'macarrao-alho-e-oleo'];
+export const starterIds = ['omelete-caprichado', 'sanduiche-quente-queijo', 'macarrao-alho-e-oleo', 'ovo-mexido-cremoso'];
 
 export const badges = ['🥄 1 porção', '⏱️ A maioria em até 30 min', '🌱 Sem precisar de experiência'];
 
