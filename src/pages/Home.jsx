@@ -46,7 +46,7 @@ export default function Home() {
         <div className="cats cats--compact" role="group" aria-label="Escolha pela refeição">
           {categories.map((c) => (
             <a key={c.id} className="cat" href={`#/receitas?category=${encodeURIComponent(c.id)}`}>
-              <Photo id={c.photo} w={400} alt="" fallback={c.emoji} />
+              <Photo id={c.photo} w={400} alt="" />
               <span className="cat__label"><strong>{c.id}</strong></span>
             </a>
           ))}
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="moodrow" role="group" aria-label="Ou escolha pelo seu momento">
           {homeMoods.map((m) => (
             <a key={m.id} className="moodpill" href={`#/receitas?${new URLSearchParams(m.filter).toString()}`}>
-              <span aria-hidden="true">{m.emoji}</span> {m.label}
+              {m.label}
             </a>
           ))}
         </div>

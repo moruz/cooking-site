@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { unsplash } from '../data/images.js';
 
-// Foto externa com carregamento preguiçoso e fallback para o emoji.
-export default function Photo({ id, w = 800, alt = '', fallback = '🍽️', className = '' }) {
+// Foto externa com carregamento preguiçoso; se faltar ou falhar, mostra um bloco de cor liso.
+export default function Photo({ id, w = 800, alt = '', className = '' }) {
   const [failed, setFailed] = useState(false);
   if (!id || failed) {
-    return <div className={`photo photo--fallback ${className}`} aria-hidden="true"><span>{fallback}</span></div>;
+    return <div className={`photo photo--fallback ${className}`} aria-hidden="true"></div>;
   }
   return (
     <img

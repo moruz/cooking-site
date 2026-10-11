@@ -11,7 +11,7 @@ export default function RecipeCard({ recipe, dense = false }) {
     <article className={`card recipe-card${dense ? ' recipe-card--dense' : ''}`}>
       <a className="recipe-card__link" href={`#/receita/${recipe.id}`} aria-label={`Abrir receita: ${recipe.title}`}>
         <div className={`recipe-card__art tone-${recipe.tone}`}>
-          <Photo id={recipe.photo} w={600} alt={recipe.title} fallback={recipe.emoji} />
+          <Photo id={recipe.photo} w={600} alt={recipe.title} />
         </div>
         <div className="recipe-card__body">
           <p className="recipe-card__tags">

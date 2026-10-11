@@ -22,7 +22,7 @@ export default function RecipeDetail({ id }) {
       <a className="back" href="#/receitas">← Todas as receitas</a>
 
       <header className={`detail__head tone-${recipe.tone}`}>
-        <div className="detail__photo"><Photo id={recipe.photo} w={1200} alt={recipe.title} fallback={recipe.emoji} /></div>
+        <div className="detail__photo"><Photo id={recipe.photo} w={1200} alt={recipe.title} /></div>
         <div className="detail__intro">
           <p className="eyebrow">{recipe.category}{recipe.onePot ? ' · uma panela só' : ''}</p>
           <h1>{recipe.title}</h1>
