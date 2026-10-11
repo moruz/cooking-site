@@ -46,6 +46,21 @@ export const glossary = [
 
 export const tips = [
   {
+    id: 'vinhos',
+    emoji: '🍷',
+    title: 'Vinhos brasileiros para o jantar a dois',
+    items: [
+      { q: 'Regra simples: leve com leve, forte com forte', a: 'Pratos leves (peixe, salada, massa com molho claro) pedem brancos e espumantes. Carnes e molhos de tomate pedem tintos. Quanto mais forte o prato, mais corpo o vinho deve ter.' },
+      { q: 'Espumante brasileiro é o curinga', a: 'O brut da Serra Gaúcha combina com entradas, massas cremosas, frituras e peixes. É uma das categorias mais premiadas do vinho nacional, e uma garrafa dá certo com quase tudo. Produtores conhecidos: Cave Geisse, Salton, Aurora, Casa Valduga.' },
+      { q: 'Brancos: Chardonnay e Sauvignon Blanc', a: 'O Chardonnay (corpo médio) vai bem com massas cremosas, frango e peixes gordurosos. O Sauvignon Blanc (fresco e cítrico) combina com saladas, camarão e pratos com tomate ou limão.' },
+      { q: 'Tintos: Merlot, Tannat e Cabernet', a: 'O Merlot é macio e versátil, bom com massas de carne e cogumelos. O Tannat, destaque da Campanha gaúcha, tem mais corpo e acompanha bem carnes vermelhas. O Cabernet Franc fica no meio do caminho.' },
+      { q: 'Para a sobremesa: moscatel e rosé', a: 'O espumante moscatel, doce e aromático, combina com chocolate, queijo azul e sobremesas cremosas. O rosé brut vai bem com morangos e frutas vermelhas.' },
+      { q: 'Temperatura certa', a: 'Espumantes e brancos entre 6 e 10 °C. Rosés entre 8 e 10 °C. Tintos leves, um pouco abaixo do ambiente, por volta de 16 °C: 20 minutos na geladeira antes de servir já ajudam.' },
+      { q: 'Não precisa gastar muito', a: 'Há ótimos vinhos nacionais por preços acessíveis. Os produtores citados nas receitas são só exemplos: se não achar, peça ao vendedor o mesmo estilo (a uva e se é jovem ou amadeirado) e a faixa de preço que você quer.' },
+      { q: 'Beba com moderação', a: 'Vinho é para maiores de 18 anos. Se um de vocês não bebe, qualquer receita de drink da lista tem versão sem álcool.' },
+    ],
+  },
+  {
     id: 'comecar',
     emoji: '🧺',
     title: 'Antes de acender o fogo',

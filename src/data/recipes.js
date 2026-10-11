@@ -12,6 +12,7 @@ import { lote3 } from './recipes-lote3.js';
 import { lote4 } from './recipes-lote4.js';
 import { lote5 } from './recipes-lote5.js';
 import { dateRecipes } from './recipes-date.js';
+import { dateRecipes2 } from './recipes-date2.js';
 
 export const DIFFICULTIES = ['Muito fácil', 'Fácil', 'Um desafio leve'];
 
@@ -454,7 +455,7 @@ export const recipes = [
   },
 ];
 
-recipes.push(...extraRecipes, ...lote1, ...lote2, ...lote3, ...lote4, ...lote5, ...dateRecipes);
+recipes.push(...extraRecipes, ...lote1, ...lote2, ...lote3, ...lote4, ...lote5, ...dateRecipes, ...dateRecipes2);
 
 export const mainIngredients = [...new Set(recipes.map((r) => r.mainIngredient))];
 

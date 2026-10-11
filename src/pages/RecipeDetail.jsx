@@ -69,6 +69,16 @@ export default function RecipeDetail({ id }) {
         </section>
       </div>
 
+      {recipe.wine && (
+        <section className="card block wine" aria-labelledby="vinho">
+          <h2 id="vinho">Para brindar: vinho brasileiro</h2>
+          <p><strong>{recipe.wine.name}</strong></p>
+          <p className="muted">{recipe.wine.why}</p>
+          <p className="wine__ex"><span>Exemplos de produtores:</span> {recipe.wine.examples}</p>
+          <small className="muted">Apenas para maiores de 18 anos. Beba com moderação.</small>
+        </section>
+      )}
+
       <section className="block-plain" aria-labelledby="passos">
         <h2 id="passos">Passo a passo <small>({recipe.steps.length} passos)</small></h2>
         <p className="muted">Uma prévia. Para cozinhar com timers e uma etapa por vez, use o modo cozinhar.</p>

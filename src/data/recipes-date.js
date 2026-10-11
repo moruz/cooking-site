@@ -9,6 +9,7 @@ export const dateRecipes = [
     summary: 'O clássico romano: massa com bacon crocante e um creme de ovos e queijo, sem uma gota de creme de leite.',
     prepMin: 10, cookMin: 15, difficulty: 'Um desafio leve',
     encouragement: 'O segredo é um só: tirar a panela do fogo antes de misturar o ovo. Vai dar certo.',
+    wine: { name: 'Chardonnay brasileiro, de preferência com pouca ou nenhuma madeira', why: 'A acidez limpa o paladar depois do bacon e do queijo, e o corpo médio acompanha a cremosidade do ovo.', examples: 'Miolo, Pizzato ou Casa Valduga' },
     ingredients: [
       { id: 'espaguete', qty: '200 g', name: 'espaguete' },
       { id: 'bacon', qty: '100 g', name: 'bacon ou pancetta em cubinhos' },
@@ -44,6 +45,7 @@ export const dateRecipes = [
     summary: 'Arroz cremoso com cogumelos dourados, manteiga e parmesão. O queridinho dos jantares a dois.',
     prepMin: 10, cookMin: 30, difficulty: 'Um desafio leve',
     encouragement: 'Risoto é mais paciência do que técnica. Ponha uma música e vá mexendo.',
+    wine: { name: 'Merlot leve ou Pinot Noir da Serra Gaúcha', why: 'Tintos macios, com pouco tanino, combinam com o sabor terroso dos cogumelos sem cobri-lo.', examples: 'Salton, Dal Pizzol ou Miolo' },
     ingredients: [
       { id: 'arroz', qty: '1 xícara (chá)', name: 'arroz arbóreo' },
       { id: 'cogumelo', qty: '250 g', name: 'champignon fatiado' },
@@ -81,6 +83,7 @@ export const dateRecipes = [
     summary: 'Risoto com o azedinho do tomate seco, rúcula fresquinha e queijo derretido por cima.',
     prepMin: 10, cookMin: 28, difficulty: 'Um desafio leve',
     encouragement: 'Se você fez o de cogumelos, este é o mesmo caminho com outro sabor.',
+    wine: { name: 'Sauvignon Blanc brasileiro', why: 'Fresco e cítrico, equilibra o tomate seco e a rúcula, que têm acidez e amargor.', examples: 'Pizzato, Salton ou Don Laurindo' },
     ingredients: [
       { id: 'arroz', qty: '1 xícara (chá)', name: 'arroz arbóreo' },
       { id: 'tomateseco', qty: '6 metades', name: 'tomate seco em conserva, picado' },
@@ -117,6 +120,7 @@ export const dateRecipes = [
     summary: 'Massa com linguiça toscana dourada, cogumelos e um molho cremoso de alho. Pouca louça, muito sabor.',
     prepMin: 10, cookMin: 20, difficulty: 'Fácil',
     encouragement: 'Um jantar que parece de restaurante e sai em 30 minutos.',
+    wine: { name: 'Merlot ou Tannat jovem', why: 'Tintos frutados e de corpo médio dão conta da linguiça e do molho cremoso.', examples: 'Lidio Carraro, Salton ou Pizzato' },
     ingredients: [
       { id: 'talharim', qty: '200 g', name: 'talharim ou fettuccine' },
       { id: 'linguica', qty: '2', name: 'linguiças toscanas, sem a pele' },
@@ -153,6 +157,7 @@ export const dateRecipes = [
     summary: 'Massa macia em um molho de manteiga, creme e parmesão. Simples, cremoso e difícil de errar.',
     prepMin: 5, cookMin: 15, difficulty: 'Fácil',
     encouragement: 'São só cinco ingredientes e quase nenhum risco. Ótimo para quem está começando a cozinhar a dois.',
+    wine: { name: 'Chardonnay ou espumante brut brasileiro', why: 'A acidez do vinho ou as bolhas do espumante cortam a riqueza do molho de queijo e creme.', examples: 'Cave Geisse, Salton ou Miolo' },
     ingredients: [
       { id: 'fettuccine', qty: '200 g', name: 'fettuccine' },
       { id: 'manteiga', qty: '2 colheres (sopa)', name: 'manteiga' },
@@ -187,6 +192,7 @@ export const dateRecipes = [
     summary: 'Nhoque macio em um molho de gorgonzola, finalizado com nozes crocantes. Pronto em 15 minutos.',
     prepMin: 5, cookMin: 12, difficulty: 'Fácil',
     encouragement: 'Usar nhoque pronto não é trapaça: é jantar bom sem estresse.',
+    wine: { name: 'Espumante moscatel', why: 'O toque adocicado e aromático contrasta com o sabor forte do queijo azul, como queijo com geleia.', examples: 'Salton, Aurora ou Casa Valduga' },
     ingredients: [
       { id: 'nhoque', qty: '400 g', name: 'nhoque de batata pronto' },
       { id: 'gorgonzola', qty: '80 g', name: 'queijo gorgonzola' },
@@ -219,6 +225,7 @@ export const dateRecipes = [
     summary: 'Medalhões de filé mignon selados, com molho de mostarda e batatinhas douradas.',
     prepMin: 10, cookMin: 25, difficulty: 'Um desafio leve',
     encouragement: 'Carne boa precisa de pouco: fogo forte, calma para deixar dourar e um descanso antes de cortar.',
+    wine: { name: 'Tannat ou Cabernet Sauvignon', why: 'Tintos encorpados, com tanino firme, são o par clássico da carne vermelha grelhada e do molho de mostarda.', examples: 'Lidio Carraro, Pizzato ou Casa Valduga' },
     ingredients: [
       { id: 'file', qty: '2 medalhões (150 g cada)', name: 'filé mignon com uns 3 cm de altura' },
       { id: 'batata', qty: '300 g', name: 'batatas bolinha ou pequenas' },
@@ -256,6 +263,7 @@ export const dateRecipes = [
     summary: 'Salmão com a pele crocante, molho de manteiga e limão e brócolis macios. Elegante e leve.',
     prepMin: 10, cookMin: 15, difficulty: 'Fácil',
     encouragement: 'Salmão é perdoador. Cozinhou a mais por um minuto? Ainda fica gostoso.',
+    wine: { name: 'Chardonnay jovem ou espumante rosé brut', why: 'O limão pede um vinho fresco, e a gordura do salmão combina com a acidez e com as bolhas.', examples: 'Cave Geisse, Miolo ou Salton' },
     ingredients: [
       { id: 'salmao', qty: '2 filés (150 g cada)', name: 'salmão, de preferência com pele' },
       { id: 'brocolis', qty: '1 maço pequeno', name: 'brócolis em floretes' },
@@ -291,6 +299,7 @@ export const dateRecipes = [
     summary: 'Pão cortado em quadradinhos, com manteiga de alho e muçarela derretida. Perfeito para beliscar a dois.',
     prepMin: 10, cookMin: 15, difficulty: 'Muito fácil',
     encouragement: 'O mais fácil de todos e o primeiro a acabar.',
+    wine: { name: 'Espumante brut brasileiro', why: 'Bolhas e acidez limpam o paladar entre uma mordida e outra de queijo derretido e alho.', examples: 'Cave Geisse, Salton ou Aurora' },
     ingredients: [
       { id: 'pao', qty: '1 pequeno', name: 'pão italiano redondo ou pão de forma grosso' },
       { id: 'manteiga', qty: '3 colheres (sopa)', name: 'manteiga amolecida' },
@@ -324,6 +333,7 @@ export const dateRecipes = [
     summary: 'Antepasto doce e azedinho de berinjela e tomate, para comer com torradas crocantes.',
     prepMin: 10, cookMin: 25, difficulty: 'Fácil',
     encouragement: 'Fica ainda melhor no dia seguinte. Dá para fazer antes e só montar a mesa.',
+    wine: { name: 'Sauvignon Blanc ou rosé seco', why: 'O toque agridoce da caponata pede um vinho leve e fresco.', examples: 'Miolo, Pizzato ou Salton' },
     ingredients: [
       { id: 'berinjela', qty: '1 média', name: 'berinjela em cubos de 2 cm' },
       { id: 'cebola', qty: '½', name: 'cebola picada' },
@@ -360,6 +370,7 @@ export const dateRecipes = [
     summary: 'Creme de abóbora aveludado com carne seca desfiada e crocante por cima. Aconchego para noites frias.',
     prepMin: 10, cookMin: 25, difficulty: 'Fácil',
     encouragement: 'Com o liquidificador, o creme fica liso de primeira.',
+    wine: { name: 'Chardonnay levemente amadeirado ou Merlot leve', why: 'O corpo médio acompanha o creme aveludado, e a carne seca pede um vinho que não seja pesado.', examples: 'Casa Valduga, Miolo ou Salton' },
     ingredients: [
       { id: 'abobora', qty: '400 g', name: 'abóbora cabotiá em cubos' },
       { id: 'cebola', qty: '½', name: 'cebola picada' },
@@ -394,6 +405,7 @@ export const dateRecipes = [
     summary: 'Mousse aerada de chocolate meio amargo e creme de leite batido, servida em taças.',
     prepMin: 15, cookMin: 5, difficulty: 'Fácil',
     encouragement: 'Sobremesa de restaurante que só precisa de geladeira e um pouco de paciência.',
+    wine: { name: 'Merlot macio ou espumante rosé', why: 'Um tinto macio e frutado acompanha o chocolate meio amargo, e o rosé refresca.', examples: 'Salton, Miolo ou Cave Geisse' },
     ingredients: [
       { id: 'chocolate', qty: '100 g', name: 'chocolate meio amargo picado' },
       { id: 'creme', qty: '2 colheres (sopa)', name: 'creme de leite de caixinha' },
@@ -424,6 +436,7 @@ export const dateRecipes = [
     summary: 'Bolinho quentinho com centro de chocolate derretido, para servir com sorvete de creme.',
     prepMin: 15, cookMin: 9, difficulty: 'Um desafio leve',
     encouragement: 'Dois minutos a mais deixam o centro firme, então fique perto do forno e use o timer.',
+    wine: { name: 'Espumante moscatel ou vinho de colheita tardia', why: 'Um vinho doce combina com o chocolate quente e equilibra o sorvete frio.', examples: 'Salton, Aurora ou Casa Valduga' },
     ingredients: [
       { id: 'chocolate', qty: '100 g', name: 'chocolate meio amargo picado' },
       { id: 'manteiga', qty: '50 g', name: 'manteiga, mais um pouco para untar' },
@@ -458,6 +471,7 @@ export const dateRecipes = [
     summary: 'Morangos mergulhados em chocolate derretido: sobremesa romântica pronta em 15 minutos.',
     prepMin: 10, cookMin: 5, difficulty: 'Muito fácil',
     encouragement: 'Caprichar no prato faz toda a diferença e quase não dá trabalho.',
+    wine: { name: 'Espumante rosé ou moscatel', why: 'Frutado e gelado, é o par clássico de morango com chocolate.', examples: 'Cave Geisse, Salton ou Aurora' },
     ingredients: [
       { id: 'morango', qty: '250 g', name: 'morangos grandes, lavados e bem secos' },
       { id: 'chocolate', qty: '100 g', name: 'chocolate meio amargo picado' },

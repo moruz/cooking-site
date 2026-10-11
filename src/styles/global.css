@@ -500,3 +500,8 @@ section + section, .main > * + * { margin-top: 2rem; }
   .selects .chip { grid-column: auto; }
 }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Harmonização com vinho brasileiro ---------- */
+.wine { margin-top: 1rem; background: var(--terracotta-soft); border-color: transparent; }
+.wine p { margin: 0.25rem 0; }
+.wine__ex span { font-weight: 800; }
