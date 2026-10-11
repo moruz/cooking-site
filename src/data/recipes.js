@@ -6,6 +6,7 @@
 // step.careful -> aviso curto de erro comum naquele passo (opcional)
 
 import { extraRecipes } from './recipes-extra.js';
+import { lote1 } from './recipes-lote1.js';
 
 export const DIFFICULTIES = ['Muito fácil', 'Fácil', 'Um desafio leve'];
 
@@ -90,7 +91,7 @@ export const recipes = [
     title: 'Macarrão alho e óleo para 1',
     emoji: '🍝',
     tone: 'terracotta',
-    mainIngredient: 'Massa',
+    mainIngredient: 'Macarrão',
     summary: 'Poucos ingredientes, pouca louça e um jeito de aprender a controlar o fogo com calma.',
     prepMin: 5,
     cookMin: 15,
@@ -448,7 +449,7 @@ export const recipes = [
   },
 ];
 
-recipes.push(...extraRecipes);
+recipes.push(...extraRecipes, ...lote1);
 
 export const mainIngredients = [...new Set(recipes.map((r) => r.mainIngredient))];
 
