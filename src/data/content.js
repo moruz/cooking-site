@@ -1,6 +1,6 @@
 // Textos do produto em português (microcopy centralizado para facilitar ajustes).
 
-export const BRAND = 'PratoFacil';
+export const BRAND = 'Prato Fácil';
 
 export const cheers = [
   'Muito bem! Um passo a menos.',

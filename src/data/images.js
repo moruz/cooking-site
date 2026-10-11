@@ -19,10 +19,10 @@ export const photos = {
 };
 
 export const categories = [
-  { id: 'Almoço', emoji: '🍽️', photo: 'oPvhddPoS-E', hint: 'Prato feito na medida' },
-  { id: 'Jantar', emoji: '🌙', photo: 'jL3X9oeQ3Ps', hint: 'Leve e rápido' },
-  { id: 'Café e lanche', emoji: '🥞', photo: '7hlOjB5VVb0', hint: 'Manhã e tarde' },
-  { id: 'Sobremesa', emoji: '🍫', photo: 'XBPWay6Kqxc', hint: 'Um docinho só seu' },
-  { id: 'Bebida', emoji: '🍋', photo: 'Z3z1O7hqyC4', hint: 'Geladinhas e quentinhas' },
-  { id: 'Date a dois', emoji: '🥂', photo: 'jJDPTYn_-18', hint: 'Receitas para duas pessoas' },
+  { id: 'Almoço', emoji: '🍽️', photo: 'EdzsUFqHbaY', hint: 'Prato feito na medida' },
+  { id: 'Jantar', emoji: '🌙', photo: 'PLyJqEJVre0', hint: 'Leve e rápido' },
+  { id: 'Café e lanche', emoji: '🥞', photo: 'pDC7vQrW-EM', hint: 'Manhã e tarde' },
+  { id: 'Sobremesa', emoji: '🍫', photo: 'hLOLcUwR0Y4', hint: 'Um docinho só seu' },
+  { id: 'Bebida', emoji: '🍋', photo: 'x4z7GiV5_-0', hint: 'Geladinhas e quentinhas' },
+  { id: 'Date a dois', emoji: '🥂', photo: 'kKKdzFadWoM', hint: 'Receitas para duas pessoas' },
 ];
