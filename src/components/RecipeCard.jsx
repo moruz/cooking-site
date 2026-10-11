@@ -22,7 +22,7 @@ export default function RecipeCard({ recipe, dense = false }) {
           <ul className="meta">
             <li>⏱ {totalTime(recipe)} min</li>
             <li>{recipe.difficulty}</li>
-            <li>1 porção</li>
+            <li>{recipe.servings === 2 ? '2 porções' : '1 porção'}</li>
           </ul>
           {inProgress && <span className="pill pill--sage">Você parou no passo {p.step + 1}</span>}
           {p?.done && <span className="pill pill--butter">Já cozinhei ✓</span>}

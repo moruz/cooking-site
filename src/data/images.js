@@ -24,4 +24,5 @@ export const categories = [
   { id: 'Café e lanche', emoji: '🥞', photo: '7hlOjB5VVb0', hint: 'Manhã e tarde' },
   { id: 'Sobremesa', emoji: '🍫', photo: 'XBPWay6Kqxc', hint: 'Um docinho só seu' },
   { id: 'Bebida', emoji: '🍋', photo: 'Z3z1O7hqyC4', hint: 'Geladinhas e quentinhas' },
+  { id: 'Date a dois', emoji: '🥂', photo: 'jJDPTYn_-18', hint: 'Receitas para duas pessoas' },
 ];

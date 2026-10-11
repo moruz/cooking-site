@@ -43,9 +43,9 @@ export default function Recipes({ onlyFavorites = false, favorites = [] }) {
   return (
     <>
       <header className="page-head">
-        <h1>{onlyFavorites ? 'Suas favoritas' : 'Cardápio para 1'}</h1>
+        <h1>{onlyFavorites ? 'Suas favoritas' : 'Cardápio'}</h1>
         <p className="muted">
-          {onlyFavorites ? 'As receitas que você quer ter sempre por perto.' : 'Tudo na medida de uma pessoa. Busque pelo nome ou filtre pelo que combina com seu momento.'}
+          {onlyFavorites ? 'As receitas que você quer ter sempre por perto.' : 'Receitas para 1 pessoa e jantares a dois. Busque pelo nome ou filtre pelo que combina com seu momento.'}
         </p>
       </header>
 

@@ -22,7 +22,9 @@ export default function Home() {
   const totalCooked = Object.values(cookedCount).reduce((a, b) => a + b, 0);
   const tip = useMemo(() => tipOfTheDay[new Date().getDate() % tipOfTheDay.length], []);
   const starters = starterIds.map(getRecipe).filter(Boolean);
-  const showcase = useMemo(() => dailyPick(recipes.filter((r) => r.photo && !starterIds.includes(r.id)), 16), []);
+  const dateList = recipes.filter((r) => r.category === 'Date a dois');
+  const dateShow = useMemo(() => dailyPick(dateList, 4), [dateList.length]);
+  const showcase = useMemo(() => dailyPick(recipes.filter((r) => r.photo && r.servings !== 2 && !starterIds.includes(r.id)), 16), []);
 
   const surprise = () => {
     const pool = recipes.filter((r) => r.difficulty !== 'Um desafio leve');
@@ -93,6 +95,19 @@ export default function Home() {
           {showcase.map((r) => <RecipeCard key={r.id} recipe={r} dense />)}
         </div>
         <p className="more"><a className="btn btn--outline" href="#/receitas">Ver todas as {recipes.length} receitas</a></p>
+      </section>
+
+      <section aria-labelledby="date">
+        <div className="section-head">
+          <div>
+            <h2 id="date">Jantar a dois</h2>
+            <p className="muted section-sub">Receitas para duas pessoas: massas, risotos, carnes e sobremesas para um date em casa.</p>
+          </div>
+          <a className="section-link" href="#/receitas?category=Date%20a%20dois">Ver as {dateList.length} →</a>
+        </div>
+        <div className="grid grid--dense">
+          {dateShow.map((r) => <RecipeCard key={r.id} recipe={r} dense />)}
+        </div>
       </section>
 
       <section aria-labelledby="como">

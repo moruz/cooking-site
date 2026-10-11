@@ -4,7 +4,7 @@ Receitas para uma pessoa só, com passo a passo calmo para quem está começando
 
 ## O que tem
 
-- **119 receitas originais** (almoço, jantar, café e lanche, sobremesa, bebida e opções de uma panela só) para 1 porção, com ingredientes, utensílios, trocas fáceis e erros comuns.
+- **134 receitas originais**: 119 para 1 porção (almoço, jantar, café e lanche, sobremesa, bebida e opções de uma panela só) e 15 de "Date a dois" para 2 porções (carbonara, risotos, filé, salmão, sobremesas e um brinde), com ingredientes, utensílios, trocas fáceis e erros comuns.
 - **Modo cozinhar:** tela cheia, um passo por vez, timers e a seção "Como deve ficar".
 - **Descoberta:** filtros por tempo, dificuldade e ingrediente principal, favoritas e o botão "Não sei o que cozinhar".
 - **Dicas para iniciantes** e dicionário rápido.

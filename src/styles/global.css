@@ -384,7 +384,7 @@ section + section, .main > * + * { margin-top: 2rem; }
   .hero__text { padding: 56px 40px; align-self: center; }
   .hero__photo { aspect-ratio: auto; min-height: 420px; }
   .promises { grid-template-columns: repeat(4, 1fr); }
-  .cats { margin-inline: 0; padding-inline: 0; display: grid; grid-template-columns: repeat(5, 1fr); overflow: visible; }
+  .cats { margin-inline: 0; padding-inline: 0; display: grid; grid-template-columns: repeat(6, 1fr); overflow: visible; }
   .cat { width: auto; }
   .recipe-card__art { height: 190px; }
   .about { grid-template-columns: 1.1fr 1fr; align-items: center; padding: 2rem; gap: 2rem; }
@@ -444,7 +444,7 @@ section + section, .main > * + * { margin-top: 2rem; }
 .cats--compact .cat__label strong { font-size: 0.95rem; }
 .quick .moodrow { margin-top: 0; }
 @media (min-width: 720px) {
-  .cats--compact { grid-template-columns: repeat(5, 1fr); }
+  .cats--compact { grid-template-columns: repeat(6, 1fr); }
   .cats--compact .cat { width: auto; }
 }
 .section-link { font-weight: 800; color: var(--terracotta-dark); text-decoration: none; white-space: nowrap; }

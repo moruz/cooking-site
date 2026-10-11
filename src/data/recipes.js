@@ -1,4 +1,4 @@
-// Receitas originais para 1 pessoa.
+// Receitas originais para 1 pessoa, mais as de 'Date a dois' (servings: 2).
 // Estrutura pensada para crescer: basta adicionar um objeto neste array.
 //
 // step.timer   -> { seconds, label } (opcional)
@@ -11,6 +11,7 @@ import { lote2 } from './recipes-lote2.js';
 import { lote3 } from './recipes-lote3.js';
 import { lote4 } from './recipes-lote4.js';
 import { lote5 } from './recipes-lote5.js';
+import { dateRecipes } from './recipes-date.js';
 
 export const DIFFICULTIES = ['Muito fácil', 'Fácil', 'Um desafio leve'];
 
@@ -453,7 +454,7 @@ export const recipes = [
   },
 ];
 
-recipes.push(...extraRecipes, ...lote1, ...lote2, ...lote3, ...lote4, ...lote5);
+recipes.push(...extraRecipes, ...lote1, ...lote2, ...lote3, ...lote4, ...lote5, ...dateRecipes);
 
 export const mainIngredients = [...new Set(recipes.map((r) => r.mainIngredient))];
 
