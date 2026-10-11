@@ -8,6 +8,7 @@
 import { extraRecipes } from './recipes-extra.js';
 import { lote1 } from './recipes-lote1.js';
 import { lote2 } from './recipes-lote2.js';
+import { lote3 } from './recipes-lote3.js';
 
 export const DIFFICULTIES = ['Muito fácil', 'Fácil', 'Um desafio leve'];
 
@@ -450,7 +451,7 @@ export const recipes = [
   },
 ];
 
-recipes.push(...extraRecipes, ...lote1, ...lote2);
+recipes.push(...extraRecipes, ...lote1, ...lote2, ...lote3);
 
 export const mainIngredients = [...new Set(recipes.map((r) => r.mainIngredient))];
 
