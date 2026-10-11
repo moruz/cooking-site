@@ -131,7 +131,7 @@ export const lote1 = [
   },
   {
     id: 'pao-de-queijo-liquidificador',
-    title: 'Pão de queijo de liquidificador', emoji: '🧀', tone: 'butter', photo: null,
+    title: 'Pão de queijo de liquidificador', emoji: '🧀', tone: 'butter', photo: 'pjjGmMtHjWc',
     category: 'Café e lanche', mainIngredient: 'Queijo',
     summary: 'Bolinhas de queijo crocantes por fora e macias por dentro, com massa feita em um minuto.',
     prepMin: 10, cookMin: 25, difficulty: 'Fácil',
@@ -163,7 +163,7 @@ export const lote1 = [
   },
   {
     id: 'brigadeiro-de-colher',
-    title: 'Brigadeiro de colher para 1', emoji: '🍫', tone: 'terracotta', photo: null,
+    title: 'Brigadeiro de colher para 1', emoji: '🍫', tone: 'terracotta', photo: '0zCcmB36K14',
     category: 'Sobremesa', mainIngredient: 'Chocolate',
     summary: 'A versão de panela pequena: doce, cremoso e na medida de uma pessoa só.',
     prepMin: 2, cookMin: 8, difficulty: 'Fácil',
@@ -191,7 +191,7 @@ export const lote1 = [
   },
   {
     id: 'bolo-de-caneca',
-    title: 'Bolo de chocolate de caneca', emoji: '🧁', tone: 'terracotta', photo: null,
+    title: 'Bolo de chocolate de caneca', emoji: '🧁', tone: 'terracotta', photo: 'JGUMed90mZ0',
     category: 'Sobremesa', mainIngredient: 'Chocolate',
     summary: 'Bolo fofinho pronto em 2 minutos no micro-ondas, direto na caneca.',
     prepMin: 3, cookMin: 2, difficulty: 'Muito fácil',
@@ -252,7 +252,7 @@ export const lote1 = [
   },
   {
     id: 'cuscuz-com-ovo',
-    title: 'Cuscuz com ovo', emoji: '🌽', tone: 'butter', photo: null,
+    title: 'Cuscuz com ovo', emoji: '🌽', tone: 'butter', photo: 'IHbQDJ1phZk',
     category: 'Café e lanche', mainIngredient: 'Ovo',
     summary: 'Cuscuz macio com ovo mexido, um café da manhã que segura até o almoço.',
     prepMin: 5, cookMin: 10, difficulty: 'Fácil',
@@ -532,7 +532,7 @@ export const lote1 = [
   },
   {
     id: 'mousse-de-maracuja',
-    title: 'Mousse de maracujá de copo', emoji: '🥭', tone: 'butter', photo: null,
+    title: 'Mousse de maracujá de copo', emoji: '🥭', tone: 'butter', photo: 'kTg8GHtAZOk',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Sobremesa cremosa e azedinha, com apenas três ingredientes e sem fogo.',
     prepMin: 8, cookMin: 0, difficulty: 'Fácil',

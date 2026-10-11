@@ -4,7 +4,7 @@
 export const lote4 = [
   {
     id: 'frango-molho-mostarda',
-    title: 'Frango ao molho de mostarda', emoji: '🍗', tone: 'butter', photo: null,
+    title: 'Frango ao molho de mostarda', emoji: '🍗', tone: 'butter', photo: 'DBVIb_rWUKw',
     category: 'Almoço', mainIngredient: 'Frango',
     summary: 'Filé de frango dourado com molho cremoso de mostarda e mel, pronto em 20 minutos.',
     prepMin: 5, cookMin: 15, difficulty: 'Fácil',
@@ -36,7 +36,7 @@ export const lote4 = [
   },
   {
     id: 'frango-parmegiana-forno',
-    title: 'Frango à parmegiana de forno', emoji: '🍗', tone: 'terracotta', photo: null,
+    title: 'Frango à parmegiana de forno', emoji: '🍗', tone: 'terracotta', photo: 'wmkogrqs8ro',
     category: 'Jantar', mainIngredient: 'Frango',
     summary: 'Filé empanado e assado, coberto de molho de tomate e queijo derretido, sem fritura.',
     prepMin: 15, cookMin: 25, difficulty: 'Um desafio leve',
@@ -160,7 +160,7 @@ export const lote4 = [
   },
   {
     id: 'salada-de-macarrao',
-    title: 'Salada de macarrão', emoji: '🥗', tone: 'sage', photo: null,
+    title: 'Salada de macarrão', emoji: '🥗', tone: 'sage', photo: '12eHC6FxPyg',
     category: 'Almoço', mainIngredient: 'Macarrão',
     summary: 'Macarrão frio com legumes crocantes e molho de azeite e limão. Boa para marmita.',
     prepMin: 10, cookMin: 10, difficulty: 'Muito fácil',
@@ -223,7 +223,7 @@ export const lote4 = [
   },
   {
     id: 'lentilha-arroz-uma-panela',
-    title: 'Lentilha com arroz de uma panela', emoji: '🥘', tone: 'terracotta', photo: null,
+    title: 'Lentilha com arroz de uma panela', emoji: '🥘', tone: 'terracotta', photo: 't-OO1RUgvt4',
     category: 'Almoço', onePot: true, mainIngredient: 'Feijão',
     summary: 'Lentilha, arroz e cebola dourada cozidos juntos. Nutritivo, barato e gostoso.',
     prepMin: 8, cookMin: 30, difficulty: 'Fácil',
@@ -255,7 +255,7 @@ export const lote4 = [
   },
   {
     id: 'sopa-de-lentilha',
-    title: 'Sopa de lentilha', emoji: '🥣', tone: 'terracotta', photo: null,
+    title: 'Sopa de lentilha', emoji: '🥣', tone: 'terracotta', photo: 'VNYi27uNrxE',
     category: 'Jantar', onePot: true, mainIngredient: 'Feijão',
     summary: 'Sopa encorpada de lentilha com cenoura e cebola, perfumada com louro e pimenta.',
     prepMin: 8, cookMin: 30, difficulty: 'Muito fácil',
@@ -287,7 +287,7 @@ export const lote4 = [
   },
   {
     id: 'almondegas-ao-molho',
-    title: 'Almôndegas ao molho de tomate', emoji: '🍖', tone: 'terracotta', photo: null,
+    title: 'Almôndegas ao molho de tomate', emoji: '🍖', tone: 'terracotta', photo: 'ESwjkyuY-Sg',
     category: 'Almoço', mainIngredient: 'Carne',
     summary: 'Bolinhas de carne moída cozidas direto no molho. Boas com arroz, purê ou macarrão.',
     prepMin: 12, cookMin: 20, difficulty: 'Fácil',
@@ -318,7 +318,7 @@ export const lote4 = [
   },
   {
     id: 'wrap-de-frango',
-    title: 'Wrap de frango com salada', emoji: '🌯', tone: 'sage', photo: null,
+    title: 'Wrap de frango com salada', emoji: '🌯', tone: 'sage', photo: '0scQnm-esNY',
     category: 'Jantar', mainIngredient: 'Frango',
     summary: 'Tortilla enrolada com frango desfiado, alface, tomate e molho de iogurte.',
     prepMin: 8, cookMin: 2, difficulty: 'Muito fácil',
@@ -379,7 +379,7 @@ export const lote4 = [
   },
   {
     id: 'crumble-maca-caneca',
-    title: 'Crumble de maçã de caneca', emoji: '🍎', tone: 'terracotta', photo: null,
+    title: 'Crumble de maçã de caneca', emoji: '🍎', tone: 'terracotta', photo: '3nacNOdvYew',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Maçã com canela coberta por farofinha crocante de aveia, feita no micro-ondas.',
     prepMin: 5, cookMin: 4, difficulty: 'Fácil',
@@ -409,7 +409,7 @@ export const lote4 = [
   },
   {
     id: 'gelatina-com-frutas',
-    title: 'Gelatina com frutas', emoji: '🍓', tone: 'terracotta', photo: null,
+    title: 'Gelatina com frutas', emoji: '🍓', tone: 'terracotta', photo: '0VSf663stPs',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Gelatina de sabor com pedaços de fruta, feita em um copo e gelada na geladeira.',
     prepMin: 8, cookMin: 0, difficulty: 'Fácil',
@@ -467,7 +467,7 @@ export const lote4 = [
   },
   {
     id: 'vitamina-banana-aveia',
-    title: 'Vitamina de banana com aveia', emoji: '🍌', tone: 'butter', photo: null,
+    title: 'Vitamina de banana com aveia', emoji: '🍌', tone: 'butter', photo: 'JfWhrxbmF-U',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Vitamina grossa e saciante de banana, leite e aveia. Boa como café da manhã.',
     prepMin: 3, cookMin: 0, difficulty: 'Muito fácil',
@@ -523,7 +523,7 @@ export const lote4 = [
   },
   {
     id: 'cha-gelado-hibisco',
-    title: 'Chá gelado de hibisco', emoji: '🌺', tone: 'terracotta', photo: null,
+    title: 'Chá gelado de hibisco', emoji: '🌺', tone: 'terracotta', photo: 'sSnCZlEWN5E',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Chá cor de rubi, levemente azedinho, gelado com rodelas de limão.',
     prepMin: 3, cookMin: 10, difficulty: 'Muito fácil',
@@ -552,7 +552,7 @@ export const lote4 = [
   },
   {
     id: 'leite-mel-canela',
-    title: 'Leite quente com mel e canela', emoji: '🥛', tone: 'butter', photo: null,
+    title: 'Leite quente com mel e canela', emoji: '🥛', tone: 'butter', photo: '2rlleYcpvtI',
     category: 'Bebida', mainIngredient: 'Café',
     summary: 'Uma caneca de leite quentinho e doce, ótima antes de dormir.',
     prepMin: 1, cookMin: 4, difficulty: 'Muito fácil',
@@ -580,7 +580,7 @@ export const lote4 = [
   },
   {
     id: 'panqueca-americana',
-    title: 'Panqueca americana fofinha', emoji: '🥞', tone: 'butter', photo: null,
+    title: 'Panqueca americana fofinha', emoji: '🥞', tone: 'butter', photo: 'ayDgOaE933A',
     category: 'Café e lanche', mainIngredient: 'Ovo',
     summary: 'Três panquecas grossas e fofas, para o fim de semana, com mel ou fruta.',
     prepMin: 8, cookMin: 10, difficulty: 'Fácil',

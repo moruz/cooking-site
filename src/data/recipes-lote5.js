@@ -35,7 +35,7 @@ export const lote5 = [
   },
   {
     id: 'arroz-linguica-uma-panela',
-    title: 'Arroz com linguiça de uma panela', emoji: '🌭', tone: 'terracotta', photo: null,
+    title: 'Arroz com linguiça de uma panela', emoji: '🌭', tone: 'terracotta', photo: 'MhI8HVjqJf8',
     category: 'Almoço', onePot: true, mainIngredient: 'Arroz',
     summary: 'Arroz cozido com linguiça e cebola, tudo no mesmo caldo gostoso.',
     prepMin: 8, cookMin: 25, difficulty: 'Fácil',
@@ -95,7 +95,7 @@ export const lote5 = [
   },
   {
     id: 'moqueca-simples-peixe',
-    title: 'Moqueca simples de peixe', emoji: '🍲', tone: 'terracotta', photo: null,
+    title: 'Moqueca simples de peixe', emoji: '🍲', tone: 'terracotta', photo: 'XQ96KH78g9U',
     category: 'Almoço', onePot: true, mainIngredient: 'Peixe',
     summary: 'Peixe cozido em molho de tomate, pimentão e leite de coco, em uma panela só.',
     prepMin: 10, cookMin: 18, difficulty: 'Um desafio leve',
@@ -128,7 +128,7 @@ export const lote5 = [
   },
   {
     id: 'frango-ensopado-batata',
-    title: 'Frango ensopado com batata', emoji: '🍲', tone: 'butter', photo: null,
+    title: 'Frango ensopado com batata', emoji: '🍲', tone: 'butter', photo: 'jjoyL1hk1Vo',
     category: 'Almoço', onePot: true, mainIngredient: 'Frango',
     summary: 'Pedaços de frango e batata cozidos juntos em caldo temperado, bem caseiro.',
     prepMin: 10, cookMin: 35, difficulty: 'Fácil',
@@ -160,7 +160,7 @@ export const lote5 = [
   },
   {
     id: 'bolinho-de-arroz-assado',
-    title: 'Bolinho de arroz assado', emoji: '🍙', tone: 'butter', photo: null,
+    title: 'Bolinho de arroz assado', emoji: '🍙', tone: 'butter', photo: 'tCIFd8dkUAs',
     category: 'Café e lanche', mainIngredient: 'Arroz',
     summary: 'Sobra de arroz vira bolinhos crocantes, assados no forno com queijo.',
     prepMin: 10, cookMin: 20, difficulty: 'Fácil',
@@ -221,7 +221,7 @@ export const lote5 = [
   },
   {
     id: 'batata-doce-recheada',
-    title: 'Batata-doce assada recheada', emoji: '🍠', tone: 'terracotta', photo: null,
+    title: 'Batata-doce assada recheada', emoji: '🍠', tone: 'terracotta', photo: 'ZarbohKJIQ8',
     category: 'Jantar', mainIngredient: 'Batata',
     summary: 'Batata-doce macia assada com recheio de frango e queijo, quase um jantar completo.',
     prepMin: 8, cookMin: 40, difficulty: 'Fácil',
@@ -280,7 +280,7 @@ export const lote5 = [
   },
   {
     id: 'salada-atum-feijao-branco',
-    title: 'Salada de atum com feijão branco', emoji: '🥗', tone: 'sage', photo: null,
+    title: 'Salada de atum com feijão branco', emoji: '🥗', tone: 'sage', photo: 'Sjvt8ubS6JY',
     category: 'Almoço', mainIngredient: 'Feijão',
     summary: 'Feijão branco, atum, cebola roxa e salsinha. Rápida, sem fogo e bem saciante.',
     prepMin: 8, cookMin: 0, difficulty: 'Muito fácil',
@@ -311,7 +311,7 @@ export const lote5 = [
   },
   {
     id: 'sopa-tomate-cremosa',
-    title: 'Sopa cremosa de tomate', emoji: '🍅', tone: 'terracotta', photo: null,
+    title: 'Sopa cremosa de tomate', emoji: '🍅', tone: 'terracotta', photo: 'yn_ep5Xrgjw',
     category: 'Jantar', onePot: true, mainIngredient: 'Legumes',
     summary: 'Sopa de tomate lisa e cremosa, boa com torradas ou queijo ralado.',
     prepMin: 8, cookMin: 22, difficulty: 'Muito fácil',
@@ -342,7 +342,7 @@ export const lote5 = [
   },
   {
     id: 'torrada-ricota-mel',
-    title: 'Torrada com ricota e mel', emoji: '🍯', tone: 'butter', photo: null,
+    title: 'Torrada com ricota e mel', emoji: '🍯', tone: 'butter', photo: '9RGPG_ksS3Q',
     category: 'Café e lanche', mainIngredient: 'Queijo',
     summary: 'Pão tostado com ricota cremosa e mel por cima, ótimo para lanche da tarde.',
     prepMin: 3, cookMin: 2, difficulty: 'Muito fácil',
@@ -432,7 +432,7 @@ export const lote5 = [
   },
   {
     id: 'mousse-de-limao',
-    title: 'Mousse de limão', emoji: '🍋', tone: 'butter', photo: null,
+    title: 'Mousse de limão', emoji: '🍋', tone: 'butter', photo: '91A3Ix8YSTY',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Creme gelado de limão com leite condensado e creme de leite, só três ingredientes.',
     prepMin: 8, cookMin: 0, difficulty: 'Fácil',
@@ -460,7 +460,7 @@ export const lote5 = [
   },
   {
     id: 'beijinho-de-colher',
-    title: 'Beijinho de colher', emoji: '🥥', tone: 'butter', photo: null,
+    title: 'Beijinho de colher', emoji: '🥥', tone: 'butter', photo: 'PzbjGm6EPhE',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Doce cremoso de coco com leite condensado, feito na panela em poucos minutos.',
     prepMin: 2, cookMin: 8, difficulty: 'Fácil',
@@ -546,7 +546,7 @@ export const lote5 = [
   },
   {
     id: 'cha-camomila-maca',
-    title: 'Chá de camomila com maçã', emoji: '🍎', tone: 'butter', photo: null,
+    title: 'Chá de camomila com maçã', emoji: '🍎', tone: 'butter', photo: 'FOQPpTbQqRE',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Chá quentinho e suave, com fatias de maçã e canela. Ótimo à noite.',
     prepMin: 3, cookMin: 8, difficulty: 'Muito fácil',
@@ -575,7 +575,7 @@ export const lote5 = [
   },
   {
     id: 'milkshake-banana',
-    title: 'Milkshake de banana', emoji: '🍌', tone: 'butter', photo: null,
+    title: 'Milkshake de banana', emoji: '🍌', tone: 'butter', photo: 'dj0Np1jooWk',
     category: 'Bebida', mainIngredient: 'Fruta',
     summary: 'Banana congelada batida com leite gelado, cremosa e sem sorvete.',
     prepMin: 4, cookMin: 0, difficulty: 'Muito fácil',

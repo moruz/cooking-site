@@ -34,7 +34,7 @@ export const lote3 = [
   },
   {
     id: 'carne-de-panela-desfiada',
-    title: 'Carne de panela desfiada', emoji: '🥩', tone: 'terracotta', photo: null,
+    title: 'Carne de panela desfiada', emoji: '🥩', tone: 'terracotta', photo: 'ktKRgwK3Gj8',
     category: 'Almoço', onePot: true, mainIngredient: 'Carne',
     summary: 'Pedaço de carne cozido devagar até desfiar, com cebola e tomate. Rende para três refeições.',
     prepMin: 10, cookMin: 70, difficulty: 'Fácil',
@@ -160,7 +160,7 @@ export const lote3 = [
   },
   {
     id: 'salada-batata-ovo',
-    title: 'Salada de batata com ovo', emoji: '🥗', tone: 'butter', photo: null,
+    title: 'Salada de batata com ovo', emoji: '🥗', tone: 'butter', photo: 'y_jQbVClNPE',
     category: 'Almoço', mainIngredient: 'Batata',
     summary: 'Batata e ovo cozidos juntos, temperados com cebola, azeite e vinagre. Boa quente ou gelada.',
     prepMin: 10, cookMin: 20, difficulty: 'Fácil',
@@ -191,7 +191,7 @@ export const lote3 = [
   },
   {
     id: 'abobrinha-refogada-alho',
-    title: 'Abobrinha refogada com alho', emoji: '🥒', tone: 'sage', photo: null,
+    title: 'Abobrinha refogada com alho', emoji: '🥒', tone: 'sage', photo: 's_EJXaJzIys',
     category: 'Almoço', mainIngredient: 'Legumes',
     summary: 'Rodelas de abobrinha douradas no alho e no azeite. Acompanha qualquer prato.',
     prepMin: 5, cookMin: 8, difficulty: 'Muito fácil',
@@ -249,7 +249,7 @@ export const lote3 = [
   },
   {
     id: 'couve-refogada',
-    title: 'Couve refogada', emoji: '🥬', tone: 'sage', photo: null,
+    title: 'Couve refogada', emoji: '🥬', tone: 'sage', photo: 'yItVmeh1XA8',
     category: 'Almoço', mainIngredient: 'Legumes',
     summary: 'Couve bem fininha, refogada rápido no alho. Verde, firme e cheirosa.',
     prepMin: 8, cookMin: 4, difficulty: 'Fácil',
@@ -278,7 +278,7 @@ export const lote3 = [
   },
   {
     id: 'ovo-cozido-torrada',
-    title: 'Ovo cozido com torrada', emoji: '🥚', tone: 'butter', photo: null,
+    title: 'Ovo cozido com torrada', emoji: '🥚', tone: 'butter', photo: 'pVO700FnVH8',
     category: 'Café e lanche', mainIngredient: 'Ovo',
     summary: 'Ovo com gema cremosa e torrada com manteiga para molhar. Café rápido e saciante.',
     prepMin: 2, cookMin: 7, difficulty: 'Fácil',
@@ -308,7 +308,7 @@ export const lote3 = [
   },
   {
     id: 'bolinho-de-chuva',
-    title: 'Bolinho de chuva', emoji: '🍩', tone: 'terracotta', photo: null,
+    title: 'Bolinho de chuva', emoji: '🍩', tone: 'terracotta', photo: '8nrJg9TkGnQ',
     category: 'Café e lanche', mainIngredient: 'Ovo',
     summary: 'Bolinhos fofos fritos em colheradas e passados em açúcar e canela, pronto em 15 minutos.',
     prepMin: 5, cookMin: 10, difficulty: 'Um desafio leve',
@@ -341,7 +341,7 @@ export const lote3 = [
   },
   {
     id: 'bolo-cenoura-caneca',
-    title: 'Bolo de cenoura de caneca', emoji: '🥕', tone: 'terracotta', photo: null,
+    title: 'Bolo de cenoura de caneca', emoji: '🥕', tone: 'terracotta', photo: 'EvfXG4aK9d8',
     category: 'Sobremesa', mainIngredient: 'Legumes',
     summary: 'Bolo macio de cenoura feito no micro-ondas, com cobertura rápida de chocolate.',
     prepMin: 5, cookMin: 3, difficulty: 'Fácil',
@@ -404,7 +404,7 @@ export const lote3 = [
   },
   {
     id: 'banana-caramelizada',
-    title: 'Banana caramelizada na frigideira', emoji: '🍌', tone: 'butter', photo: null,
+    title: 'Banana caramelizada na frigideira', emoji: '🍌', tone: 'butter', photo: '4oGKCdrBDzE',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Banana em rodelas douradas na manteiga com açúcar e canela. Pronta em 6 minutos.',
     prepMin: 2, cookMin: 6, difficulty: 'Fácil',
@@ -433,7 +433,7 @@ export const lote3 = [
   },
   {
     id: 'sorvete-de-banana',
-    title: 'Sorvete de banana', emoji: '🍦', tone: 'butter', photo: null,
+    title: 'Sorvete de banana', emoji: '🍦', tone: 'butter', photo: '22wc2_XjB7o',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Banana congelada batida até virar sorvete cremoso, sem açúcar e só com uma fruta.',
     prepMin: 5, cookMin: 0, difficulty: 'Muito fácil',

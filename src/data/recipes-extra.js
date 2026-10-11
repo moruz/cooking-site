@@ -141,7 +141,7 @@ export const extraRecipes = [
   {
     id: 'tapioca-queijo-tomate',
     title: 'Tapioca de queijo e tomate',
-    emoji: '🫓', tone: 'butter', photo: null,
+    emoji: '🫓', tone: 'butter', photo: 'ow7kLC93NBY',
     category: 'Café e lanche', mainIngredient: 'Queijo',
     summary: 'Massa de tapioca crocante por fora e recheio quente de queijo, pronta em 5 minutos.',
     prepMin: 2, cookMin: 5, difficulty: 'Muito fácil',

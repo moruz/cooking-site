@@ -33,7 +33,7 @@ export const lote2 = [
   },
   {
     id: 'crepioca-queijo',
-    title: 'Crepioca de queijo', emoji: '🫓', tone: 'butter', photo: null,
+    title: 'Crepioca de queijo', emoji: '🫓', tone: 'butter', photo: 'zxHVPWQod24',
     category: 'Café e lanche', mainIngredient: 'Ovo',
     summary: 'Massa de ovo e tapioca feita direto na frigideira, com queijo derretido por dentro.',
     prepMin: 3, cookMin: 5, difficulty: 'Fácil',
@@ -93,7 +93,7 @@ export const lote2 = [
   },
   {
     id: 'escondidinho-carne-moida',
-    title: 'Escondidinho de carne moída para 1', emoji: '🥘', tone: 'terracotta', photo: null,
+    title: 'Escondidinho de carne moída para 1', emoji: '🥘', tone: 'terracotta', photo: 'LHr6EN-B8NQ',
     category: 'Almoço', mainIngredient: 'Carne',
     summary: 'Carne temperada coberta por purê e queijo, gratinada no forno ou na frigideira.',
     prepMin: 15, cookMin: 25, difficulty: 'Um desafio leve',
@@ -126,7 +126,7 @@ export const lote2 = [
   },
   {
     id: 'carne-moida-legumes',
-    title: 'Carne moída com legumes de uma panela', emoji: '🥕', tone: 'terracotta', photo: null,
+    title: 'Carne moída com legumes de uma panela', emoji: '🥕', tone: 'terracotta', photo: 'Xk0jQPZseMk',
     category: 'Almoço', onePot: true, mainIngredient: 'Carne',
     summary: 'Refogado de carne moída com cenoura e ervilha, bom com arroz ou macarrão.',
     prepMin: 8, cookMin: 18, difficulty: 'Fácil',
@@ -159,7 +159,7 @@ export const lote2 = [
   },
   {
     id: 'frango-desfiado-temperado',
-    title: 'Frango desfiado temperado', emoji: '🍗', tone: 'butter', photo: null,
+    title: 'Frango desfiado temperado', emoji: '🍗', tone: 'butter', photo: '-aSIJHYvUts',
     category: 'Almoço', mainIngredient: 'Frango',
     summary: 'Frango cozido e desfiado, refogado com cebola e tomate. Dá recheio, marmita e sanduíche.',
     prepMin: 5, cookMin: 25, difficulty: 'Fácil',
@@ -191,7 +191,7 @@ export const lote2 = [
   },
   {
     id: 'mandioca-cozida-manteiga',
-    title: 'Mandioca cozida na manteiga', emoji: '🥔', tone: 'butter', photo: null,
+    title: 'Mandioca cozida na manteiga', emoji: '🥔', tone: 'butter', photo: '0psoaGSZs-4',
     category: 'Almoço', mainIngredient: 'Batata',
     summary: 'Pedaços macios de mandioca com manteiga, que acompanham carne, ovo ou café.',
     prepMin: 8, cookMin: 25, difficulty: 'Fácil',
@@ -372,7 +372,7 @@ export const lote2 = [
   },
   {
     id: 'arroz-doce-cremoso',
-    title: 'Arroz-doce cremoso para 1', emoji: '🍚', tone: 'butter', photo: null,
+    title: 'Arroz-doce cremoso para 1', emoji: '🍚', tone: 'butter', photo: '99jtD4mhaec',
     category: 'Sobremesa', mainIngredient: 'Arroz',
     summary: 'Sobremesa de arroz com leite e canela, cozida devagar até ficar cremosa.',
     prepMin: 3, cookMin: 25, difficulty: 'Fácil',
@@ -401,7 +401,7 @@ export const lote2 = [
   },
   {
     id: 'maca-assada-canela',
-    title: 'Maçã assada com canela', emoji: '🍎', tone: 'terracotta', photo: null,
+    title: 'Maçã assada com canela', emoji: '🍎', tone: 'terracotta', photo: 'Shx9Cj122TA',
     category: 'Sobremesa', mainIngredient: 'Fruta',
     summary: 'Maçã macia e perfumada, assada com canela e mel. Cheiro bom na casa toda.',
     prepMin: 5, cookMin: 25, difficulty: 'Muito fácil',
