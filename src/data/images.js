@@ -22,7 +22,7 @@ export const categories = [
   { id: 'Almoço', emoji: '🍽️', photo: 'EdzsUFqHbaY', hint: 'Prato feito na medida' },
   { id: 'Jantar', emoji: '🌙', photo: 'PLyJqEJVre0', hint: 'Leve e rápido' },
   { id: 'Café e lanche', emoji: '🥞', photo: 'pDC7vQrW-EM', hint: 'Manhã e tarde' },
-  { id: 'Sobremesa', emoji: '🍫', photo: 'hLOLcUwR0Y4', hint: 'Um docinho só seu' },
+  { id: 'Sobremesa', emoji: '🍫', photo: 'hLOLcUwR0Y4', hint: 'Um docinho para fechar' },
   { id: 'Bebida', emoji: '🍋', photo: 'x4z7GiV5_-0', hint: 'Geladinhas e quentinhas' },
   { id: 'Date a dois', emoji: '🥂', photo: 'kKKdzFadWoM', hint: 'Receitas para duas pessoas' },
 ];

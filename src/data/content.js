@@ -24,14 +24,14 @@ export const homeMoods = [
 ];
 
 export const steps3 = [
-  { n: '1', title: 'Escolha um prato', text: 'Tudo já vem na medida de uma pessoa.' },
+  { n: '1', title: 'Escolha um prato', text: 'Cada receita já vem na medida certa: 1 porção, ou 2 nos jantares a dois.' },
   { n: '2', title: 'Separe os ingredientes', text: 'Marque cada item na lista.' },
   { n: '3', title: 'Siga um passo por vez', text: 'Com timer e o que você deve ver em cada etapa.' },
 ];
 
 export const starterIds = ['omelete-caprichado', 'sanduiche-quente-queijo', 'macarrao-alho-e-oleo', 'ovo-mexido-cremoso'];
 
-export const badges = ['🥄 1 porção', '⏱️ A maioria em até 30 min', '🌱 Sem precisar de experiência'];
+export const badges = ['🥄 1 ou 2 porções', '⏱️ A maioria em até 30 min', '🌱 Sem precisar de experiência'];
 
 export const glossary = [
   { term: 'Refogar', text: 'Cozinhar rapidamente em um pouco de gordura (óleo, azeite ou manteiga), mexendo de vez em quando.' },

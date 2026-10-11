@@ -36,7 +36,7 @@ export default function Layout({ route, children }) {
 
       <footer className="footer container">
         <p><strong>{BRAND}</strong> — cozinha simples, para um ou para dois.</p>
-        <p>Receitas originais, feitas para quem cozinha para si. Errar faz parte, e você está indo bem.</p>
+        <p>Receitas originais para quem cozinha sozinho ou a dois. Errar faz parte, e você está indo bem.</p>
         <p className="footer__credit">Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
       </footer>
 

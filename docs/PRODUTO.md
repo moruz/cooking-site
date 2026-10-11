@@ -1,12 +1,12 @@
 # Prato Fácil — documento de produto
 
 ## Resumo do produto
-**Prato Fácil** é um app web responsivo (mobile-first) de receitas para uma pessoa só, com foco em iniciantes. Seu diferencial é o **modo cozinhar**: tela cheia, uma etapa por vez, timers e a seção "Como deve ficar" que mostra o que a pessoa deve ver, ouvir e sentir. Todo o conteúdo (receitas, dicas, microcopy) é original e em português do Brasil.
+**Prato Fácil** é um app web responsivo (mobile-first) de receitas para uma ou duas pessoas, com foco em iniciantes. Seu diferencial é o **modo cozinhar**: tela cheia, uma etapa por vez, timers e a seção "Como deve ficar" que mostra o que a pessoa deve ver, ouvir e sentir. Todo o conteúdo (receitas, dicas, microcopy) é original e em português do Brasil.
 
 ## Público e dores
 | Perfil | Dor | Resposta do produto |
 |---|---|---|
-| Mora sozinho(a) | Receitas vêm para 4 pessoas e sobra comida | Todas as receitas são para 1 porção |
+| Mora sozinho(a) | Receitas vêm para 4 pessoas e sobra comida | As receitas são para 1 porção, e a categoria Date a dois traz pratos para 2 |
 | Não sabe o que cozinhar | Paralisia de escolha | Botão "Não sei o que cozinhar", atalhos por humor, filtros |
 | Erra com frequência | Medo de estragar | "Como deve ficar", "Cuidado" por passo, erros comuns com solução |
 | Iniciante | Termos técnicos | Dicionário rápido e linguagem simples |
